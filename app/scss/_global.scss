@@ -11,7 +11,6 @@ html {
 a {
     display: inline-block;
     text-decoration: none;
-    color: $txt;
 }
 
 ul,
@@ -19,4 +18,18 @@ li {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+body {
+    font-family: 'Quicksand-Medium', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $gray;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
 }

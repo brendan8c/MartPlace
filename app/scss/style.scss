@@ -1,3 +1,85 @@
-@import 'global';
 @import 'vars';
+@import 'global';
 @import 'fonts';
+// Шапка 1 уровень
+.header__top {
+    background-color: $ligr;
+}
+
+.header__top-inner {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box__logotype {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 6px;
+}
+
+.header__top-button {
+    text-align: center;
+    height: 36px;
+    border-radius: 20px;
+    background-color: $blue;
+    padding: 4px 19px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.header__button {
+    font-family: 'Quicksand-Regular', sans-serif;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.header__user {
+    font-family: 'Quicksand-Medium', sans-serif;
+    line-height: 22px;
+    font-size: 16px;
+    color: #000;
+    margin-left: 22px;
+}
+
+// шапка 2 уровень
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu {
+    height: 80px;
+}
+
+.menu__list {
+    li {
+        display: inline-block;
+        &+li {
+            margin-left: 32px;
+        }
+    }
+    a {
+        line-height: 42px;
+        color: #000;
+        margin: 19px 0;
+    }
+}
+
+// поиск
+.menu__search {
+    width: 360px;
+    height: 46px;
+}
+
+.menu__search-btn {
+    background-color: $blue;
+    border-radius: 20px;
+    width: 70px;
+    height: 46px;
+}
