@@ -22,7 +22,7 @@
     margin-right: 6px;
 }
 
-.header__top-button {
+.header__button {
     text-align: center;
     height: 36px;
     border-radius: 20px;
@@ -30,13 +30,21 @@
     padding: 4px 19px;
     margin-left: auto;
     margin-right: 50px;
-}
-
-.header__button {
-    font-family: 'Quicksand-Regular', sans-serif;
-    line-height: 28px;
-    font-size: 14px;
-    color: #fff;
+    transition: .5s;
+    &-top {
+        font-family: 'Quicksand-Regular', sans-serif;
+        line-height: 28px;
+        font-size: 14px;
+        color: $wt;
+        transition: .5s;
+        display: block;
+    }
+    &:hover {
+        background-color: $wt;
+        & a {
+            color: $blue;
+        }
+    }
 }
 
 .header__user {
@@ -72,14 +80,235 @@
 }
 
 // поиск
-.menu__search {
-    width: 360px;
-    height: 46px;
+.search {
+    margin-top: 17px;
+    text-align: center;
+    &-inner {
+        max-width: 360px;
+        position: relative;
+        margin: 0 auto;
+        input {
+            height: 46px;
+            outline: none;
+            display: block;
+            width: 100%;
+            border-radius: 22px;
+            border: 1px solid #d9dfe5;
+            font-size: 15px;
+            font-weight: 500;
+            padding-left: 23px;
+            padding-right: 80px;
+            &::placeholder {
+                color: #898f96;
+                font-weight: 500;
+            }
+        }
+        button {
+            cursor: pointer;
+            position: absolute;
+            background-color: $blue;
+            border-radius: 22px;
+            border: none;
+            width: 70px;
+            height: 46px;
+            outline: none;
+            right: 0px;
+            bottom: 0px;
+        }
+    }
 }
 
-.menu__search-btn {
-    background-color: $blue;
-    border-radius: 20px;
-    width: 70px;
-    height: 46px;
+// начало тела сайта
+.body__one {
+    position: relative;
+    background-color: $blblue;
+    height: 724px;
+    text-align: center;
+    padding-top: 183px;
+    &-text1 {
+        font-family: 'Quicksand-Regular', sans-serif;
+        font-size: 60px;
+        line-height: 70px;
+        color: $wt;
+        span {
+            font-family: 'Quicksand-Bold', sans-serif;
+            font-weight: 600;
+        }
+    }
+    &-text2 {
+        font-family: 'Quicksand-Medium', sans-serif;
+        font-size: 20px;
+        line-height: 72px;
+        color: $wt;
+        padding-bottom: 68px;
+    }
+    &-button {
+        font-family: 'Quicksand-Regular', sans-serif;
+        font-size: 16px;
+        line-height: 55px;
+    }
+    &-btn1,
+    &-btn2 {
+        height: 55px;
+        border-radius: 30px;
+        border: 1px solid $wt;
+        display: inline-block;
+        transition: .5s;
+        & a {
+            padding: 0 32px;
+            display: block;
+            color: $wt;
+        }
+    }
+    &-btn1 {
+        margin-right: 30px;
+    }
+    &-btn1:hover,
+    &-btn2:hover {
+        background-color: $wt;
+        & a {
+            color: $blblue;
+        }
+    }
+}
+
+// поиск по категориям
+.search__category {
+    &-box {
+        z-index: 3;
+        position: absolute;
+        top: 836px;
+        background-color: $wt;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 6px;
+        min-height: 136px;
+        width: 1140px;
+        padding: 40px;
+        & input {
+            font-family: 'Quicksand-Regular', sans-serif;
+            font-size: 16px;
+            line-height: 42px;
+            font-weight: 500;
+            outline: none;
+            max-width: 613px;
+            width: 100%;
+            height: 53px;
+            border: 1px solid #dcdcdc;
+            border-bottom-left-radius: 6px;
+            border-top-left-radius: 6px;
+            padding: 0 30px 0 30px;
+        }
+    }
+    &-btn {
+        font-family: 'Quicksand-Regular', sans-serif;
+        font-size: 16px;
+        line-height: 42px;
+        outline: none;
+        position: absolute;
+        height: 53px;
+        top: 40px;
+    }
+    .boxes1 {
+        left: 650px;
+        min-width: 195px;
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+        border: 1px solid #dcdcdc;
+        background-color: $wt;
+        // padding-right: 36px;
+        // padding-left: 0;
+        padding: 0 34px 0 0;
+        img {
+            position: absolute;
+            left: 162px;
+            top: 23px;
+        }
+    }
+    .boxes2 {
+        left: 875px;
+        min-width: 223px;
+        border-radius: 6px;
+        border: none;
+        color: $wt;
+        background-color: $blue;
+    }
+}
+
+// бокс по категориям — тень
+.search__container {
+    &-light {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 135px;
+        border-radius: 6px;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.502;
+        position: absolute;
+    }
+    .light1s {
+        top: 810px;
+        z-index: 2;
+        width: 1080px;
+    }
+    .light2s {
+        top: 823px;
+        z-index: 1;
+        width: 1110px;
+    }
+}
+
+// Информационный блок 
+.body__two {
+    height: 710px;
+    padding-top: 186px;
+    &-box {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    &-features+&-features {
+        margin-left: 30px;
+    }
+    &-features:hover {
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+    &-features {
+        position: relative;
+        width: 360px;
+        height: 404px;
+        img {
+            position: absolute;
+            margin-top: 30px;
+            top: 10px;
+            left: 120px;
+        }
+        span {
+            position: absolute;
+            top: 180px;
+            left: 80px;
+            right: 80px;
+            font-family: 'Quicksand-Regular', sans-serif;
+            font-size: 24px;
+        }
+        p {
+            position: absolute;
+            top: 215px;
+            font-family: 'Quicksand-Regular', sans-serif;
+            font-size: 16px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
+// блок со слайдом
+.body__slide {
+    background-color: $ligr;
+    height: 850px;
+    &-bigbox {}
+}
+
+body {
+    height: 3000px;
 }

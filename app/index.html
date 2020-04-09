@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Шапка 1 уровень -->
     <header class="header">
         <div class="header__top">
             <div class="container">
@@ -23,13 +24,14 @@
                             <img src="img/MartPlace.png" alt="">
                         </a>
                     </div>
-                    <div class="header__top-button">
-                        <a href="#" class="header__button">Become a Seller</a>
+                    <div class="header__button">
+                        <a href="#" class="header__button-top">Become a Seller</a>
                     </div>
                     <a href="#" class="header__user">User Name</a>
                 </div>
             </div>
         </div>
+        <!-- шапка 2 уровень -->
         <div class="header__menu">
             <div class="container">
                 <nav class="menu">
@@ -50,22 +52,100 @@
                             <a href="#">Pages</a>
                         </li>
                     </ul>
-                    <div class="menu__search">
-                        <input type="search" name="q" placeholder="Search product here...">
-                        <input type="submit" value="Найти"></p>
-                        <a class="menu__search-btn">
-                            <img src="img/search.png" alt="search">
-                        </a>
-                        <div class="menu__search-text">
-                            Search product here...
+                    <!-- поиск -->
+                    <section class="search">
+                        <div class="search-inner">
+                            <form action="">
+                                <input autofocus type="text" placeholder="Search product here...">
+                                <button type="submit">
+                                    <img src="img/search.png" alt="">
+                                </button>
+                            </form>
                         </div>
-                    </div>
+                    </section>
                 </nav>
             </div>
         </div>
     </header>
-
-
+    <!-- начало тела сайта -->
+    <div class="body__one">
+        <div class="container">
+            <div class="body__one-text">
+                <div class="body__one-text1">Create Your Own<span><br> Digital Product Marketplace</span></div>
+                <div class="body__one-text2">MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products</div>
+            </div>
+            <div class="body__one-button">
+                <div class="body__one-btn1">
+                    <a href="#">View All Products</a>
+                </div>
+                <div class="body__one-btn2">
+                    <a href="#">Popular Products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- поиск по категориям -->
+    <div class="search__category">
+        <div class="container">
+            <div class="search__category-box">
+                <form action="">
+                    <input type="text" placeholder="Search your products...">
+                    <button class="search__category-btn boxes1" type="submit">
+                        <img src="img/chevron-down.png" alt="">
+                        All Categories
+                    </button>
+                    <button class="search__category-btn boxes2" type="submit">
+                        Search Now
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- бокс по категориям — тень -->
+    <div class="search__container">
+        <div class="container">
+            <div class="search__container-light light1s">
+            </div>
+        </div>
+    </div>
+    <div class="search__container">
+        <div class="container">
+            <div class="search__container-light light2s">
+            </div>
+        </div>
+    </div>
+    <!-- Информационный блок -->
+    <div class="body__two">
+        <div class="container">
+            <div class="body__two-box">
+                <a href="#" class="body__two-features">
+                    <img src="img/Layer1.png" alt="">
+                    <span>Best UX Research</span>
+                    <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </a href="#">
+                <a href="#" class="body__two-features">
+                    <img src="img/Layer2.png" alt="">
+                    <span>Fully Responsive</span>
+                    <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </a href="#">
+                <a href="#" class="body__two-features">
+                    <img src="img/Layer3.png" alt="">
+                    <span>Buy & Sell Easily</span>
+                    <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </a href="#">
+            </div>
+        </div>
+    </div>
+    <!-- блок со слайдом -->
+    <div class="body__slide">
+        <div class="container">
+            <div class="body__slide-bigbox">
+                <div class="body__slide-switch"></div>
+                <div class="body__slide-review_one"></div>
+                <div class="body__slide-review_two"></div>
+            </div>
+        </div>
+    </div>
 
 
 

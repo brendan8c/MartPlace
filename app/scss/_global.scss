@@ -26,10 +26,11 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: $gray;
+    overflow-x: hidden;
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
 }
