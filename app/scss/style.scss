@@ -340,27 +340,24 @@
         border-radius: 22px;
         background-color: $pur;
     }
-    // сверху названием слайдера и кнопки слайдера
-    // ниже идут стили правого бокса слайдера
-    &-wrapper {
-        display: flex;
+    // слайдер
+    &-slil_box {
+        float: left;
     }
-    // сам слайдер
+    &-slil {
+        display: inline-block;
+    }
     &-review_one {
         margin-bottom: 120px;
-        // background-color: #4e5760;
-        box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.6);
-        width: 555px;
-        height: 450px;
-    }
-    // бокс с права
-    &-review_two {
-        margin-bottom: 120px;
         background-color: $wt;
-        width: 585px;
+        width: 1140px;
         height: 450px;
-        padding: 51px 51px 24px;
         box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+    }
+    &-infomtion_box {
+        padding-top: 30px;
+        padding-left: 605px;
+        padding-right: 52px;
     }
     &-heading {
         font-size: 24px;
@@ -372,7 +369,6 @@
         margin-bottom: 30px;
     }
     &-avatar_photo {
-        background-image: url(../img/Ellipse.png);
         height: 30px;
         width: 30px;
         margin-right: 9px;
@@ -479,81 +475,21 @@
         font-size: 15px;
         line-height: 30px;
         color: $blue;
-        margin-right: 90px;
+        margin-right: 170px;
     }
-}
-
-// рейтинг в виде звёздочек =============================
-.reviewStars-input {
-    overflow: hidden;
-    position: relative;
-    float: left;
-    input:checked~label,
-    label,
-    label:hover,
-    label:hover~label {
-        background: url(../img/star0.png) no-repeat;
+    // рейтинг в виде звёздочек
+    &-stars {
+        display: flex;
     }
-    input {
-        opacity: 0;
-        width: 24px;
-        height: 21px;
-        position: absolute;
-        top: 0;
-        z-index: 0;
+    &-star_good {
+        background-image: url(../img/star.png);
+        height: 15px;
+        width: 15px;
     }
-    input:checked~label {
-        background-position: 0 -21px;
-        height: 21px;
-        width: 22px;
-    }
-    label {
-        background-position: 0 0;
-        height: 21px;
-        width: 22px;
-        float: right;
-        cursor: pointer;
-        margin-right: 10px;
-        position: relative;
-        z-index: 1;
-    }
-    label:hover,
-    label:hover~label {
-        background-position: 0 -21px;
-        height: 21px;
-        width: 22px;
-    }
-    #star-0 {
-        left: 0px;
-    }
-    #star-1 {
-        left: 31px;
-    }
-    #star-2 {
-        left: 62px;
-    }
-    #star-3 {
-        left: 93px;
-    }
-    #star-4 {
-        left: 124px;
-    }
-}
-
-// рейтинг в виде звёздочек выше =============================
-// картинки для слайдера
-.body__slide {
-    &-slil {
-        position: relative;
-    }
-    .slick1 {
-        background-image: url(../img/slide1.jpg);
-    }
-    .slick2 {
-        background-image: url(../img/slide2.jpg);
-    }
-    .slick3 {
-        background-image: url(../img/slide3.jpg);
+    &-star_bad {
+        background-image: url(../img/star_half.png);
+        height: 15px;
+        width: 15px;
     }
 }
 
@@ -567,14 +503,12 @@
 
 .slick-next {
     background-image: url(../img/chevron-right.png);
-    z-index: 1;
-    // background-color: transparent;
-    left: 90%;
+    background-color: transparent;
     position: absolute;
     height: 14px;
     width: 8px;
-    top: 1770px;
-    right: 100px;
+    top: -112px;
+    right: 57px;
     border: none;
     padding: 0;
     font-size: 0;
@@ -583,16 +517,18 @@
 
 .slick-prev {
     background-image: url(../img/chevron-left.png);
-    z-index: 1;
     background-color: transparent;
-    right: 90%;
     position: absolute;
     height: 14px;
     width: 8px;
-    top: 1770px;
-    right: 165px;
+    top: -112px;
+    right: 107px;
     border: none;
     padding: 0;
     font-size: 0;
     outline: none;
+}
+
+body {
+    height: 3000px;
 }
