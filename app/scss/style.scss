@@ -1,6 +1,10 @@
 @import 'vars';
 @import 'global';
 @import 'fonts';
+body {
+    height: 4000px;
+}
+
 // Шапка 1 уровень
 .header__top {
     background-color: $ligr;
@@ -372,6 +376,10 @@
         height: 30px;
         width: 30px;
         margin-right: 9px;
+        background-size: cover;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     &-avatar_name {
         font-size: 15px;
@@ -477,7 +485,7 @@
         color: $blue;
         margin-right: 170px;
     }
-    // рейтинг в виде звёздочек
+    // * рейтинг в виде звёздочек
     &-stars {
         display: flex;
     }
@@ -493,14 +501,7 @@
     }
 }
 
-.slick-slide {
-    // position: relative;
-    // display: block;
-    // height: 450px;
-    // width: 555px;
-    min-height: 134px;
-}
-
+// todo: кнопки для слайдера
 .slick-next {
     background-image: url(../img/chevron-right.png);
     background-color: transparent;
@@ -529,6 +530,219 @@
     outline: none;
 }
 
-body {
-    height: 3000px;
+// ! Маркетплейс завязанный на хештегах 
+.products {
+    background-color: #f6f7fb;
+    padding-top: 120px;
+    height: 1726px;
+}
+
+//* это оглавление
+.products__title {
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 111px;
+    padding: 0px 31px;
+    margin-bottom: 30px;
+    &-box1 {
+        font-family: 'Quicksand-Regular', sans-serif;
+        font-size: 30px;
+    }
+    &-box2 {
+        font-family: 'Quicksand-Regular', sans-serif;
+        font-size: 16px;
+        line-height: 32px;
+        margin-left: auto;
+        color: #747b86;
+    }
+    &-box3 {
+        background-image: url(../img/Icon1.png);
+        width: 5px;
+        height: 20px;
+        margin-left: 25px;
+    }
+}
+
+// * кнопки
+.products__inner {
+    box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
+    height: 92px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 51px;
+    padding: 0px 30px;
+    button+button {
+        margin-left: 10px;
+    }
+    button {
+        font-size: 15px;
+        line-height: 30px;
+        height: 32px;
+        padding: 0px 21px;
+        outline: none;
+        border: none;
+        background-color: #f1f3f6;
+        border-radius: 15px;
+        color: #747b86;
+        cursor: pointer;
+        &.mixitup-control-active {
+            background-color: $blue;
+            color: #ffffff;
+        }
+    }
+    button:hover {
+        background-color: $blue;
+        color: #fff;
+    }
+}
+
+// * блок продукта
+.products__item-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products__item {
+    height: 530px;
+    width: 361px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    &-img {
+        width: 361px;
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        a+a {
+            margin-left: 10px;
+        }
+        a {
+            font-size: 15px;
+            border-radius: 20px;
+            padding: 10px 25px;
+            border: 1px solid #fff;
+            background-color: transparent;
+            color: #ffffff;
+            outline: none;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: #fff;
+            color: $blue;
+        }
+    }
+    &-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    &-wrapper_center {
+        padding: 0px 30px;
+        border-bottom: 1px solid #ececec;
+    }
+    &-box_center {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+    &-avatar_photo {
+        height: 30px;
+        width: 30px;
+        margin-right: 9px;
+        background-size: cover;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &-avatar_name {
+        font-family: 'Quicksand-Regular', sans-serif;
+        font-size: 15px;
+        line-height: 30px;
+        color: #000000;
+        margin-right: 20px;
+    }
+    &-cms_photo {
+        background-image: url(../img/icoWordpress.png);
+        height: 16px;
+        width: 16px;
+        margin-right: 9px;
+    }
+    &-cms_name {
+        font-family: 'Quicksand-Regular', sans-serif;
+        font-size: 15px;
+        line-height: 30px;
+        color: $pur;
+    }
+    &-short {
+        font-family: 'Quicksand-Regular', sans-serif;
+        color: #000;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 33px;
+    }
+    &-price {
+        display: flex;
+        align-items: center;
+        padding: 12px 30px 0;
+    }
+    &-cost {
+        height: 30px;
+        padding: 0px 15px;
+        border-radius: 20px;
+        background-color: #e6f1fd;
+        font-size: 15px;
+        line-height: 30px;
+        margin-right: 13px;
+        color: $blue;
+    }
+    &-like_photo {
+        background-image: url(../img/like.png);
+        height: 14px;
+        width: 16px;
+        border: none;
+        margin-right: 10px;
+    }
+    &-like {
+        font-size: 15px;
+        line-height: 30px;
+        color: #6f7d8d;
+        margin-right: 137px;
+    }
+    &-basket {
+        font-family: 'Quicksand-Regular', sans-serif;
+        font-size: 15px;
+        line-height: 30px;
+        color: $blue;
+    }
+    &-basket_photo {
+        background-image: url(../img/cart.png);
+        height: 14px;
+        width: 14px;
+        margin-right: 9px;
+    }
+}
+
+// * нижняя кнопка
+.products_btn_wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    &-bottom {
+        font-family: 'Quicksand-Regular', sans-serif;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 30px;
+        color: #ffffff;
+        background-color: $blue;
+        font-size: 16px;
+        padding: 19.5px 30px;
+        display: inline-block;
+    }
 }

@@ -11,3 +11,6 @@ $(function() {
         speed: 500,
     });
 });
+$(function() {
+    var mixer = mixitup('.products__item-box');
+});
