@@ -22,5 +22,9 @@
         "normalize.css": "^8.0.1",
         "slick-carousel": "^1.8.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "graceful-fs": "^4.2.3",
+        "jquery-1.8": "^1.8.3",
+        "rateyo": "^2.3.5"
+    }
 }
