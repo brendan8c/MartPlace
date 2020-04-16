@@ -13,3 +13,8 @@ $blblue: #173cc3;
     font-family: 'Quicksand-Bold', sans-serif;
     font-weight: 600;
 }
+
+@mixin f600 {
+    font-family: 'Quicksand-Regular', sans-serif;
+    font-weight: 500;
+}

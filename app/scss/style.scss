@@ -910,3 +910,81 @@
         margin-right: 9px;
     }
 }
+
+// преимущества ----------------------
+.advantages {
+    padding-top: 93px;
+    height: 350px;
+    background-color: #212225;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-box {
+        max-width: 277px;
+        text-align: center;
+        padding: 0px 15px;
+    }
+    &-img {
+        justify-content: center;
+        margin: 0 auto 30px;
+        svg {
+            height: 50px;
+            width: 50px;
+        }
+    }
+    &-txt {
+        font-size: 36px;
+        @include f600;
+        margin-bottom: 15px;
+    }
+    &-title {
+        font-size: 18px;
+        line-height: 36px;
+        color: #fff;
+    }
+}
+
+// Зададим цвет 
+.advantages {
+    .ico1 {
+        color: #feb71d;
+        path {
+            fill: #feb71d;
+        }
+    }
+    .ico2 {
+        color: #58c9e9;
+        path {
+            fill: #58c9e9;
+        }
+    }
+    .ico3 {
+        color: #77de51;
+        path {
+            fill: #77de51;
+        }
+    }
+    .ico4 {
+        color: #ff6a6d;
+        path {
+            fill: #ff6a6d;
+        }
+    }
+}
+
+// анимация
+.advantages-img {
+    animation-name: blink;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    80% {
+        opacity: 0.5;
+    }
+}
+
+// конец блока ----------------------------
