@@ -4,3 +4,12 @@ $gray: #333333;
 $ligr: #eff1f5;
 $blue: #0674ec;
 $blblue: #173cc3;
+@mixin f500 {
+    font-family: 'Quicksand-Medium', sans-serif;
+    font-weight: 500;
+}
+
+@mixin f600 {
+    font-family: 'Quicksand-Bold', sans-serif;
+    font-weight: 600;
+}

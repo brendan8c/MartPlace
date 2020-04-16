@@ -1,10 +1,7 @@
 @import 'vars';
 @import 'global';
+@import 'drop-down-menu';
 @import 'fonts';
-body {
-    height: 4000px;
-}
-
 // Шапка 1 уровень
 .header__top {
     background-color: $ligr;
@@ -99,12 +96,12 @@ body {
             border-radius: 22px;
             border: 1px solid #d9dfe5;
             font-size: 15px;
-            font-weight: 500;
+            @include f500;
             padding-left: 23px;
             padding-right: 80px;
             &::placeholder {
                 color: #898f96;
-                font-weight: 500;
+                @include f500;
             }
         }
         button {
@@ -135,8 +132,7 @@ body {
         line-height: 70px;
         color: $wt;
         span {
-            font-family: 'Quicksand-Bold', sans-serif;
-            font-weight: 600;
+            @include f600;
         }
     }
     &-text2 {
@@ -189,10 +185,9 @@ body {
         width: 1140px;
         padding: 40px;
         & input {
-            font-family: 'Quicksand-Regular', sans-serif;
             font-size: 16px;
             line-height: 42px;
-            font-weight: 500;
+            @include f500;
             outline: none;
             max-width: 613px;
             width: 100%;
