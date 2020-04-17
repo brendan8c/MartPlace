@@ -96,12 +96,12 @@
             border-radius: 22px;
             border: 1px solid #d9dfe5;
             font-size: 15px;
-            @include f500;
+            @include f400;
             padding-left: 23px;
             padding-right: 80px;
             &::placeholder {
                 color: #898f96;
-                @include f500;
+                @include f400;
             }
         }
         button {
@@ -132,7 +132,7 @@
         line-height: 70px;
         color: $wt;
         span {
-            @include f600;
+            @include f700;
         }
     }
     &-text2 {
@@ -187,7 +187,7 @@
         & input {
             font-size: 16px;
             line-height: 42px;
-            @include f500;
+            @include f400;
             outline: none;
             max-width: 613px;
             width: 100%;
@@ -786,9 +786,6 @@
 
 // Слайдер 
 .products__items {
-    // display: flex;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
     &-big {
         height: 530px;
         width: 361px !important;
@@ -935,10 +932,11 @@
     }
     &-txt {
         font-size: 36px;
-        @include f600;
+        @include f400;
         margin-bottom: 15px;
     }
     &-title {
+        @include f400;
         font-size: 18px;
         line-height: 36px;
         color: #fff;
@@ -988,3 +986,107 @@
 }
 
 // конец блока ----------------------------
+// блок с достоинствами маркетплейса
+// todo: шапка 
+.worth {
+    height: 1185px;
+    background-color: #ffffff;
+    padding-top: 120px;
+    &__title {
+        padding-left: 230px;
+        padding-right: 230px;
+        text-align: center;
+        &-head {
+            @include f400;
+            font-size: 36px;
+            margin-bottom: 30px;
+            span {
+                color: $blue;
+            }
+        }
+        &-text {
+            @include f400;
+            font-size: 16px;
+            color: #555555;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+// todo: блоки
+.worth__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    &_blok {
+        height: 373px;
+        width: 361px;
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-top: 50px;
+        text-align: center;
+        border-radius: 4px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        &-title {
+            @include f400;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        &-text {
+            @include f400;
+            font-size: 16px;
+            color: #555555;
+        }
+        .images {
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        .images::after {
+            @include f300;
+            font-size: 48px;
+            color: rgba(92, 135, 248, 0.2);
+            position: absolute;
+            top: -17px;
+            left: -125px;
+        }
+        &-img1 {
+            background-image: url(../img/worth-1.jpg);
+        }
+        &-img1::after {
+            content: '01';
+        }
+        &-img2 {
+            background-image: url(../img/worth-2.jpg);
+        }
+        &-img2::after {
+            content: '02';
+        }
+        &-img3 {
+            background-image: url(../img/worth-3.jpg);
+        }
+        &-img3::after {
+            content: '03';
+        }
+        &-img4 {
+            background-image: url(../img/worth-4.jpg);
+        }
+        &-img4::after {
+            content: '04';
+        }
+        &-img5 {
+            background-image: url(../img/worth-5.jpg);
+        }
+        &-img5::after {
+            content: '05';
+        }
+        &-img6 {
+            background-image: url(../img/worth-6.jpg);
+        }
+        &-img6::after {
+            content: '06';
+        }
+    }
+}

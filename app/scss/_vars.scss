@@ -4,17 +4,22 @@ $gray: #333333;
 $ligr: #eff1f5;
 $blue: #0674ec;
 $blblue: #173cc3;
+@mixin f700 {
+    font-family: 'Quicksand-Bold', sans-serif;
+    font-weight: 700;
+}
+
 @mixin f500 {
     font-family: 'Quicksand-Medium', sans-serif;
     font-weight: 500;
 }
 
-@mixin f600 {
-    font-family: 'Quicksand-Bold', sans-serif;
-    font-weight: 600;
+@mixin f400 {
+    font-family: 'Quicksand-Regular', sans-serif;
+    font-weight: 400;
 }
 
-@mixin f600 {
-    font-family: 'Quicksand-Regular', sans-serif;
-    font-weight: 500;
+@mixin f300 {
+    font-family: 'Quicksand-Light', sans-serif;
+    font-weight: 300;
 }
