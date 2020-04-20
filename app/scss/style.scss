@@ -1508,3 +1508,55 @@
     }
     
     // todo: Блок последних новостей - конец
+    // todo: самы короткий блок - начало
+    .support {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding-top: 60px;
+            height: 300px;
+        }
+        &__box {
+            width: 555px;
+            text-align: center;
+        }
+        &__linner {
+            width: 2px;
+            height: 300px;
+            bottom: 0;
+            left: 50%;
+            background-color: #e8eaf3;
+            position: absolute;
+        }
+        .images {
+            background-repeat: no-repeat;
+            width: 155px;
+            height: 120px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 32px;
+        }
+        &__img1 {
+            background-image: url(../img/Icon_1.png);
+        }
+        &__img2 {
+            background-image: url(../img/Icon_2.png);
+        }
+        .text {
+            @include f400;
+            font-size: 24px;
+        }
+        &__txt1 {
+            span {
+                color: $blue;
+            }
+        }
+        &__txt2 {
+            span {
+                color: $pur;
+            }
+        }
+    }
+    
+    // todo: самы короткий блок - конец
