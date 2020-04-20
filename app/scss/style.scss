@@ -1382,3 +1382,129 @@
     }
     
     // todo: Блок с отзывами из фэйсбук - конец
+    // todo: Блок последних новостей - начало
+    .latest {
+        height: 885px;
+        padding-top: 122px;
+        background-color: #eff1f5;
+        &__header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-left: 230px;
+            padding-right: 230px;
+            &-title {
+                @include f400;
+                font-size: 36px;
+                margin-bottom: 37px;
+                span {
+                    color: $blue;
+                }
+            }
+            &-text {
+                @include f400;
+                font-size: 16px;
+                color: #555555;
+            }
+        }
+        &__body {
+            display: flex;
+            justify-content: space-between;
+            &-box {
+                position: relative;
+                border-radius: 4px;
+                box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+                height: 475px;
+                width: 361px;
+            }
+            &-img {
+                width: 361px;
+                height: 230px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                cursor: pointer;
+                margin-bottom: 20px;
+            }
+            &-title {
+                @include f500;
+                font-size: 22px;
+                margin-bottom: 25px;
+                padding-left: 28px;
+                padding-right: 28px;
+            }
+            &-text {
+                @include f400;
+                font-size: 16px;
+                color: #555555;
+                padding-bottom: 30px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            &-wrapper {
+                height: 60px;
+                position: absolute;
+                padding-left: 50px;
+                padding-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                border-top: 2px solid #ececec;
+                padding-bottom: 15px;
+                bottom: 0;
+                &_date {
+                    @include f400;
+                    font-size: 15px;
+                    color: #999999;
+                    margin-right: 105px;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        font-family: 'icomoon';
+                        content: '\e950';
+                        font-size: 15px;
+                        color: $blue;
+                        top: 0;
+                        left: -23px;
+                    }
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        height: 40px;
+                        width: 2px;
+                        background-color: #ececec;
+                        top: -10px;
+                        right: -50px;
+                    }
+                }
+                &_comit {
+                    @include f400;
+                    font-size: 15px;
+                    color: #7e7e7e;
+                    position: relative;
+                    margin-right: 55px;
+                    &::before {
+                        position: absolute;
+                        font-family: 'icomoon';
+                        content: '\f0e5';
+                        left: -20px;
+                        top: 0px;
+                        color: #7e7e7e;
+                    }
+                }
+                &_eye {
+                    @include f400;
+                    font-size: 15px;
+                    color: #7e7e7e;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        font-family: 'icomoon';
+                        content: '\f06e';
+                        left: -20px;
+                        top: 0px;
+                        color: #7e7e7e;
+                    }
+                }
+            }
+        }
+    }
+    
+    // todo: Блок последних новостей - конец

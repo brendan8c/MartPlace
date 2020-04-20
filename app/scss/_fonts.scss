@@ -51,8 +51,28 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-envelope-o:before {
+    content: "\f003";
+}
+
+.icon-eye:before {
+    content: "\f06e";
+}
+
 .icon-comment-o:before {
     content: "\f0e5";
+}
+
+.icon-phone:before {
+    content: "\e942";
+}
+
+.icon-location2:before {
+    content: "\e948";
+}
+
+.icon-alarm:before {
+    content: "\e950";
 }
 
 // @font-face {
