@@ -1560,3 +1560,36 @@
     }
     
     // todo: самы короткий блок - конец
+    // todo: блок с градиентом - начало
+    .gradient {
+        background: rgb(98, 32, 148);
+        background: linear-gradient(90deg, rgba(98, 32, 148, 1) 0%, rgba(18, 54, 213, 1) 100%);
+        text-align: center;
+        padding-top: 110px;
+        height: 400px;
+        &__title {
+            @include f400;
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+        &__txt {
+            @include f400;
+            font-size: 18px;
+            margin-bottom: 50px;
+            color: #ffffff;
+        }
+        &__link {
+            @include f400;
+            font-size: 16px;
+            color: #0674ec;
+            cursor: pointer;
+            height: 55px;
+            width: 190px;
+            border-radius: 10vh;
+            background-color: #fff;
+            padding: 1em 0;
+        }
+    }
+    
+    // todo: блок с градиентом - конец
