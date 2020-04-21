@@ -39,6 +39,10 @@
         }
         a:hover {
             color: $blue;
+            text-shadow: 0 0 15px $pur;
+        }
+        a:hover .blink {
+            animation: none;
         }
     }
 }
