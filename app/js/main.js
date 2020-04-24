@@ -42,5 +42,26 @@ $(function() {
         // заблокирует использование звёздочек
         readOnly: true
     });
+    $(".page__content-star").rateYo({
+        // колличество звёздочек 
+        rating: 5,
+        // размер звёздочек "ширина"
+        starWidth: "12px",
+        // заблокирует использование звёздочек
+        readOnly: true
+    });
 
+
+});
+//todo: прикрутил range Slider
+$(function() {
+    $(".js-range-slider").ionRangeSlider({
+        skin: "round",
+        type: "double",
+        min: 0,
+        max: 300,
+        from: 30,
+        to: 300,
+        prefix: "$"
+    });
 });

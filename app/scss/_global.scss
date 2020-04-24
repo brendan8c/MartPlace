@@ -34,3 +34,58 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+// ++++++++++++++++++++++++++++++++++++++++++++
+// прижимаем футер к низу
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+// +++++++++++++++++++++++++++++
+// todo: хлебные крошки - начало
+.breadcrumbs {
+    &-list {
+        li {
+            display: inline-block;
+            position: relative;
+            &+li {
+                padding-left: 25px;
+                &:before {
+                    content: '/';
+                    position: absolute;
+                    left: 8px;
+                    color: #ffffff;
+                    font-size: 15px;
+                }
+            }
+            a {
+                @include f400;
+                font-size: 15px;
+                color: #ffffff;
+            }
+            &:last-child {
+                a,
+                span {
+                    color: #a8b1bb;
+                }
+            }
+        }
+    }
+}
+
+// todo: хлебные крошки - конец

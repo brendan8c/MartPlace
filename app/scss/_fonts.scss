@@ -55,8 +55,24 @@
     content: "\f003";
 }
 
+.icon-th-large:before {
+    content: "\f009";
+}
+
+.icon-list:before {
+    content: "\f03a";
+}
+
+.icon-chevron-right:before {
+    content: "\f054";
+}
+
 .icon-eye:before {
     content: "\f06e";
+}
+
+.icon-chevron-down:before {
+    content: "\f078";
 }
 
 .icon-shopping-cart:before {
@@ -69,6 +85,18 @@
 
 .icon-comment-o:before {
     content: "\f0e5";
+}
+
+.icon-circle-o:before {
+    content: "\f10c";
+}
+
+.icon-long-arrow-left:before {
+    content: "\f177";
+}
+
+.icon-long-arrow-right:before {
+    content: "\f178";
 }
 
 .icon-phone:before {

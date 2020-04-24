@@ -46,6 +46,12 @@
             color: $blue;
         }
     }
+    &:active {
+        background-color: #ffffff;
+        color: $blue;
+        border: 1px solid $blue;
+        box-shadow: inset 0 0 10px 1px $blue;
+    }
 }
 
 .header__notifications-1 {
@@ -229,6 +235,9 @@
                 color: #898f96;
                 @include f400;
             }
+            &::selection {
+                background-color: rgb(196, 175, 250);
+            }
         }
         button {
             cursor: pointer;
@@ -241,6 +250,11 @@
             outline: none;
             right: 0px;
             bottom: 0px;
+            &:active {
+                color: $blue;
+                border: 1px solid #ffff;
+                box-shadow: inset 0 0 10px 1px #fff;
+            }
         }
     }
 }
@@ -400,6 +414,9 @@
         position: relative;
         width: 360px;
         height: 404px;
+        &:active {
+            color: $blue;
+        }
         img {
             position: absolute;
             margin-top: 30px;
@@ -1944,18 +1961,13 @@
                     padding-right: 130px;
                     font-size: 16px;
                     color: #000000;
-                    text-shadow: 0 0 2px $blue;
                     outline: none;
                     border: none;
                     border-radius: 25px;
-                    caret-color: rgb(128, 156, 255);
                     &::selection {
                         background-color: rgb(196, 175, 250);
-                        color: rgb(0, 0, 253);
                     }
                     &::placeholder {
-                        color: #ababab;
-                        text-shadow: none;
                         font-size: 15px;
                     }
                 }
@@ -1971,6 +1983,12 @@
                     color: #ffffff;
                     border: none;
                     border-radius: 25px;
+                    &:active {
+                        background-color: #ffffff;
+                        color: $blue;
+                        border: 1px solid $blue;
+                        box-shadow: inset 0 0 10px 1px $blue;
+                    }
                 }
             }
             &-social {
@@ -2087,3 +2105,492 @@
         color: #ffffff;
     }
 }
+
+// ===================================================
+// todo: стили для ------------------ new-items.html
+// ---------------------------------------------------
+// todo: блок с поиском - начало
+.grsearch {
+    height: 280px;
+    background: rgb(98, 32, 148);
+    background: linear-gradient(90deg, rgba(98, 32, 148, 1) 0%, rgba(18, 54, 213, 1) 100%);
+    &__wrap {
+        padding-top: 70px;
+        text-align: center;
+        &-title {
+            @include f400;
+            font-size: 26px;
+            color: #ffffff;
+            margin-bottom: 32px;
+        }
+        &-wrapper {
+            margin: 0 auto;
+            margin-bottom: 37px;
+            position: relative;
+            max-width: 555px;
+            min-width: 300px;
+            input {
+                height: 55px;
+                max-width: 555px;
+                width: 100%;
+                min-width: 300px;
+                padding-left: 30px;
+                padding-right: 130px;
+                border-radius: 10vh;
+                border: none;
+                outline: none;
+                &::selection {
+                    background-color: rgb(196, 175, 250);
+                }
+                &::placeholder {
+                    @include f400;
+                    color: #747b86;
+                    font-size: 15px;
+                }
+            }
+            button {
+                @include f400;
+                font-size: 15px;
+                position: absolute;
+                height: 55px;
+                width: 130px;
+                background-color: $blue;
+                border-radius: 10vh;
+                border: none;
+                right: 0px;
+                outline: none;
+                color: #ffffff;
+                cursor: pointer;
+                &:active {
+                    background-color: #ffffff;
+                    color: $blue;
+                    border: 1px solid $blue;
+                    box-shadow: inset 0 0 10px 1px $blue;
+                }
+            }
+        }
+    }
+}
+
+// todo: блок с поиском - конец
+// todo: блок с поиском - нижний блок - начало
+.headertop {
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    padding-top: 29px;
+    height: 100px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-link-wrapp {
+            display: flex;
+        }
+        &-link {
+            font-size: 16px;
+            @include f400;
+            color: #555555;
+            &:hover {
+                color: $blue;
+                text-shadow: 0 0 1px $blue;
+            }
+        }
+        &-link+&-link {
+            margin-left: 40px;
+        }
+        &-categoru {
+            height: 42px;
+            width: 220px;
+            padding-left: 20px;
+            font-size: 14px;
+            @include f400;
+            color: #747b86;
+            margin-right: 40px;
+            border: 1px solid #eceff2;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            position: relative;
+            &::before {
+                content: '\f078';
+                position: absolute;
+                font-family: 'icomoon';
+                font-size: 12px;
+                color: #747b86;
+                right: 19px;
+            }
+            &:hover {
+                color: $blue;
+                text-shadow: 0 0 1px $blue;
+            }
+        }
+        &-categli {
+            width: 95px;
+            height: 42px;
+            border: 1px solid #eceff2;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+            .icon-th-large {
+                font-size: 20px;
+                color: #555555;
+                &:hover {
+                    color: $blue;
+                }
+            }
+            .icon-list {
+                font-size: 20px;
+                color: #555555;
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+// todo: блок с поиском - нижний блок - конец
+// todo: левый бар - начало
+.page {
+    height: 1880px;
+    padding-top: 80px;
+    background-color: #eff1f5;
+    &__big-wrap {
+        display: flex;
+        // justify-content: space-between;
+    }
+    &__aside {
+        margin-right: 15px;
+        &-block {
+            width: 264px;
+            max-height: 372px;
+            height: 100%;
+            background-color: #ffffff;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+            padding: 30px;
+        }
+        &-title {
+            @include f400;
+            font-size: 20px;
+            padding-bottom: 24px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #e7ebee;
+            position: relative;
+            &::before {
+                content: '\f078';
+                font-family: 'icomoon';
+                position: absolute;
+                color: #555555;
+                font-size: 13px;
+                right: 0;
+            }
+        }
+        &-menu {
+            li {
+                padding-left: 24px;
+                position: relative;
+                &+li {
+                    margin-top: 13px;
+                }
+                &::before {
+                    content: '\f054';
+                    font-family: 'icomoon';
+                    position: absolute;
+                    color: #747b86;
+                    font-size: 11px;
+                    left: 0;
+                }
+                span {
+                    @include f400;
+                    position: absolute;
+                    font-size: 15px;
+                    color: #747b86;
+                    right: 0;
+                    margin-left: 10px;
+                }
+            }
+            a {
+                &:hover {
+                    color: $blue;
+                    text-shadow: 0 0 1px $blue;
+                }
+            }
+        }
+        .other1 {
+            li {
+                &::before {
+                    content: '\f10c';
+                    font-family: 'icomoon';
+                    position: absolute;
+                    color: #747b86;
+                    font-size: 11px;
+                    left: 0;
+                }
+            }
+        }
+        .other2 {
+            margin-bottom: 10px;
+        }
+        &-search {
+            width: 170px;
+            height: 44px;
+            background-color: $blue;
+            border-radius: 10vh;
+            @include f500;
+            color: #ffffff;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            outline: none;
+            &:active {
+                background-color: #ffffff;
+                color: $blue;
+                border: 1px solid $blue;
+                box-shadow: inset 0 0 10px 1px $blue;
+            }
+        }
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            form {
+                width: 205px;
+                padding-bottom: 60px;
+                .irs--round .irs-line {
+                    height: 5px;
+                    background-color: #efedf3;
+                    border-radius: 10vh;
+                }
+                .irs--round .irs-bar {
+                    height: 5px;
+                    background-color: $pur;
+                }
+                .irs--round .irs-handle {
+                    top: 29px;
+                    width: 18px;
+                    height: 18px;
+                    border: 4px solid $blue;
+                    background-color: #fff;
+                }
+                .irs--round .irs-max,
+                .irs--round .irs-min {
+                    display: none;
+                }
+                .irs--round .irs-from,
+                .irs--round .irs-single,
+                .irs--round .irs-to {
+                    @include f400;
+                    font-size: 15px;
+                    line-height: 1;
+                    text-shadow: none;
+                    background-color: #f1ecf9;
+                    color: #7347c1;
+                    border-radius: 20px;
+                    top: 60px;
+                    padding: 8px 10px;
+                }
+                .irs--round .irs-from:before,
+                .irs--round .irs-single:before,
+                .irs--round .irs-to:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// todo: левый бар - конец
+// todo: основная страница - начало
+.page {
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        &-box {
+            flex: 1 263px;
+            margin-left: 12px;
+            margin-right: 12px;
+            margin-bottom: 30px;
+            height: 372px;
+            width: 263px;
+            border: 30px;
+            border-radius: 4px;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        }
+        &-img {
+            height: 160px;
+            width: 263px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 15px;
+        }
+        &-wrapper {
+            border-bottom: 1px solid #ececec;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &-title {
+            @include f500;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        &-wrap {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+        &-ava {
+            background-image: url(../img/ava3.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: 7px;
+            border-radius: 10vh;
+            width: 28px;
+            height: 28px;
+        }
+        &-user {
+            @include f400;
+            font-size: 15px;
+            margin-right: auto;
+        }
+        &-rate {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        &-pic {
+            background-image: url(../img/cart.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 14px;
+            width: 14px;
+        }
+        &-star {
+            margin-left: 0;
+            margin-right: 100px;
+        }
+        &-basket {
+            @include f400;
+            font-size: 15px;
+            color: $blue;
+        }
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &-cost {
+            height: 30px;
+            width: 60px;
+            background-color: #e6f1fd;
+            color: $blue;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-right: 63px;
+            border-radius: 10vh;
+        }
+        &-cmspic {
+            background-image: url(../img/icoWordpress.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 16px;
+            width: 16px;
+        }
+        &-cms {
+            @include f400;
+            font-size: 15px;
+            color: $pur;
+        }
+    }
+}
+
+// todo: пагинация на разные страницы - начало
+.page {
+    &__pagination {
+        margin-top: 30px;
+        margin-left: auto;
+        width: 360px;
+        height: 38px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-list {
+            li {
+                display: inline-block;
+                &+li {
+                    margin-left: 5px;
+                }
+            }
+            a,
+            span {
+                @include f500;
+                font-size: 16px;
+                height: 38px;
+                width: 50px;
+                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                border-radius: 10vh;
+                border: none;
+                outline: none;
+                &.active {
+                    background-color: $blue;
+                }
+                &:active {
+                    background-color: #ffffff;
+                    color: $blue;
+                    border: 1px solid $blue;
+                    box-shadow: inset 0 0 10px 1px $blue;
+                }
+            }
+        }
+        .btn {
+            font-size: 16px;
+            color: #000;
+            height: 38px;
+            width: 50px;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            border-radius: 10vh;
+            border: none;
+            outline: none;
+            &:hover {
+                background-color: $blue;
+                color: #fff;
+            }
+            &:active {
+                background-color: #ffffff;
+                color: $blue;
+                border: 1px solid $blue;
+                box-shadow: inset 0 0 10px 1px $blue;
+            }
+        }
+    }
+}
+
+// todo: пагинация на разные страницы - конец
+// todo: основная страница - конец
