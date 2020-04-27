@@ -1609,6 +1609,7 @@
             height: 230px;
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
             cursor: pointer;
             margin-bottom: 20px;
         }
@@ -2237,12 +2238,20 @@
                 &:hover {
                     color: $blue;
                 }
+                &.active {
+                    color: $blue;
+                    transition: .5s;
+                }
             }
             .icon-list {
                 font-size: 20px;
                 color: #555555;
                 &:hover {
                     color: $blue;
+                }
+                &.active {
+                    color: $blue;
+                    transition: .5s;
                 }
             }
         }
@@ -2257,7 +2266,6 @@
     background-color: #eff1f5;
     &__big-wrap {
         display: flex;
-        // justify-content: space-between;
     }
     &__aside {
         margin-right: 15px;
@@ -2441,6 +2449,14 @@
             font-size: 18px;
             margin-bottom: 15px;
         }
+        &-subtitle {
+            display: none;
+            @include f400;
+            font-size: 16px;
+            color: #555555;
+            width: 210px;
+            margin-bottom: 10px;
+        }
         &-wrap {
             margin-bottom: 20px;
             display: flex;
@@ -2463,6 +2479,44 @@
             font-size: 15px;
             margin-right: auto;
         }
+        &-likes {
+            display: none;
+            @include f400;
+            font-size: 15px;
+            color: #6f7d8d;
+            position: relative;
+            top: 41px;
+            right: 50px;
+            &::before {
+                font-family: 'icomoon';
+                content: '\f08a';
+                position: absolute;
+                font-size: 14px;
+                color: $pur;
+                top: 0;
+                left: -18px;
+                font-weight: 600;
+            }
+        }
+        &-comments {
+            display: none;
+            @include f400;
+            font-size: 15px;
+            color: #6f7d8d;
+            position: relative;
+            top: 70px;
+            right: 12px;
+            &::before {
+                font-family: 'icomoon';
+                content: '\f0e5';
+                position: absolute;
+                font-size: 14px;
+                color: $pur;
+                top: 0;
+                left: -18px;
+                font-weight: 600;
+            }
+        }
         &-rate {
             display: flex;
             justify-content: space-between;
@@ -2482,10 +2536,36 @@
             margin-left: 0;
             margin-right: 100px;
         }
+        &-star2 {
+            display: none;
+            @include f400;
+            font-size: 15px;
+            color: #6f7d8d;
+            top: -5px;
+            right: 190px;
+        }
         &-basket {
             @include f400;
             font-size: 15px;
             color: $blue;
+        }
+        &-line1 {
+            display: none;
+            position: absolute;
+            background-color: #ececec;
+            left: 232px;
+            top: -120px;
+            width: 1px;
+            height: 150px;
+        }
+        &-line2 {
+            display: none;
+            position: absolute;
+            background-color: #ececec;
+            left: 460px;
+            top: -120px;
+            width: 1px;
+            height: 150px;
         }
         &-bottom {
             display: flex;
@@ -2506,6 +2586,23 @@
             justify-content: center;
             margin-right: 63px;
             border-radius: 10vh;
+        }
+        &-cost2 {
+            display: none;
+            height: 30px;
+            max-width: 100px;
+            @include f500;
+            font-size: 15px;
+            border-radius: 10vh;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: $blue;
+            text-align: center;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #e6f1fd;
+            top: -85px;
+            left: 487px;
         }
         &-cmspic {
             background-image: url(../img/icoWordpress.png);
@@ -2594,3 +2691,96 @@
 
 // todo: пагинация на разные страницы - конец
 // todo: основная страница - конец
+// добаляю изменения при переключении с плитки на строки товаров
+.page__content {
+    &.list {
+        height: 1415px;
+        width: 848px;
+        overflow: hidden;
+    }
+}
+
+.page__content-box {
+    &.list {
+        flex: 1 100%;
+        height: 210px;
+        .page__content-img {
+            width: 230px;
+            height: 210px;
+            float: left;
+            margin-bottom: 0;
+        }
+        .page__content-wrapper {
+            margin-bottom: 0;
+            padding-left: 250px;
+            padding-right: 30px;
+            padding-top: 30px;
+            position: relative;
+            border-bottom: none;
+        }
+        .page__content-wrap {
+            position: absolute;
+            left: 510px;
+            top: 45px;
+        }
+        .page__content-title {
+            width: 228px;
+        }
+        .page__content-subtitle {
+            display: block;
+        }
+        .page__content-rate {
+            position: relative;
+        }
+        .page__content-star {
+            position: absolute;
+            top: 0;
+            left: 258px;
+        }
+        .page__content-pic {
+            position: absolute;
+            top: -21px;
+            left: 485px;
+        }
+        .page__content-basket {
+            position: absolute;
+            top: -25px;
+            left: 508px;
+        }
+        .page__content-bottom {
+            position: relative;
+        }
+        .page__content-cost {
+            display: none;
+        }
+        .page__content-cost2 {
+            display: flex;
+            position: absolute;
+        }
+        .page__content-cms {
+            position: absolute;
+            top: -2px;
+            left: 40px;
+        }
+        .page__content-star2 {
+            display: block;
+            position: absolute;
+        }
+        .page__content-likes {
+            display: block;
+            position: absolute;
+        }
+        .page__content-comments {
+            display: block;
+            position: absolute;
+        }
+        .page__content-line1 {
+            display: block;
+            position: absolute;
+        }
+        .page__content-line2 {
+            display: block;
+            position: absolute;
+        }
+    }
+}

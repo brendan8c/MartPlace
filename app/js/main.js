@@ -65,3 +65,20 @@ $(function() {
         prefix: "$"
     });
 });
+
+//todo: переключение товаров с плитки на строки
+$(function() {
+    $(".icon-list").on("click", function() {
+        $(".page__content-box, .page__content").addClass("list");
+        $(".icon-list").addClass("active");
+        $(".icon-th-large").removeClass("active");
+    });
+});
+
+$(function() {
+    $(".icon-th-large").on("click", function() {
+        $(".page__content-box , .page__content").removeClass("list");
+        $(".icon-th-large").addClass("active");
+        $(".icon-list").removeClass("active");
+    });
+});
