@@ -55,8 +55,28 @@
     content: "\f003";
 }
 
+.icon-star-o:before {
+    content: "\f006";
+}
+
 .icon-th-large:before {
     content: "\f009";
+}
+
+.icon-cog:before {
+    content: "\f013";
+}
+
+.icon-gear:before {
+    content: "\f013";
+}
+
+.icon-trash-o:before {
+    content: "\f014";
+}
+
+.icon-home:before {
+    content: "\f015";
 }
 
 .icon-list:before {
@@ -79,8 +99,20 @@
     content: "\f07a";
 }
 
+.icon-bar-chart:before {
+    content: "\f080";
+}
+
+.icon-bar-chart-o:before {
+    content: "\f080";
+}
+
 .icon-heart-o:before {
     content: "\f08a";
+}
+
+.icon-upload:before {
+    content: "\f093";
 }
 
 .icon-bell-o:before {
@@ -91,8 +123,20 @@
     content: "\f0e5";
 }
 
+.icon-file-text-o:before {
+    content: "\f0f6";
+}
+
 .icon-circle-o:before {
     content: "\f10c";
+}
+
+.icon-mail-reply-all:before {
+    content: "\f122";
+}
+
+.icon-reply-all:before {
+    content: "\f122";
 }
 
 .icon-long-arrow-left:before {
@@ -101,6 +145,14 @@
 
 .icon-long-arrow-right:before {
     content: "\f178";
+}
+
+.icon-dice:before {
+    content: "\e915";
+}
+
+.icon-book:before {
+    content: "\e91f";
 }
 
 .icon-phone:before {
@@ -113,6 +165,30 @@
 
 .icon-alarm:before {
     content: "\e950";
+}
+
+.icon-user:before {
+    content: "\e971";
+}
+
+.icon-briefcase:before {
+    content: "\e9ae";
+}
+
+.icon-question:before {
+    content: "\ea09";
+}
+
+.icon-checkmark:before {
+    content: "\ea10";
+}
+
+.icon-exit:before {
+    content: "\ea14";
+}
+
+.icon-share2:before {
+    content: "\ea82";
 }
 
 .icon-google:before {

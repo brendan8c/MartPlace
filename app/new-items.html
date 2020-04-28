@@ -22,16 +22,31 @@
                                     <img src="img/MartPlace.png" alt="">
                                 </a>
                             </div>
+                            <!-- todo: для бекендера | класс closed--user для отключения пользователя. в css прописан он и закомментирован! -->
                             <div class="header__button">
                                 <a href="#" class="header__button-top">Become a Seller</a>
                             </div>
-                            <a href="#" class="header__notifications-1"></a>
-                            <a href="#" class="header__notifications-2"></a>
-                            <a href="#" class="header__notifications-3"></a>
-                            <a href="#" class="header__ava" style="background-image: url(img/ava3.png);"></a>
+                            <a href="#" class="header__notifications-1 closed--user"></a>
+                            <a href="#" class="header__notifications-2 closed--user"></a>
+                            <a href="#" class="header__notifications-3 closed--user"></a>
+                            <a href="#" class="header__ava closed--user" style="background-image: url(img/ava3.png);"></a>
                             <div class="header__wrapper">
-                                <a href="#" class="header__user">Taofiq Hakim</a>
-                                <div class="header__user_money">$20.45</div>
+                                <a href="#" class="header__user closed--user">Taofiq Hakim</a>
+                                <!-- выпадающее меню пользователя  -->
+                                <ul class="header__user-list">
+                                    <li><a href="#">Profile Page</a></li>
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href="#">Account Settings</a></li>
+                                    <li><a href="#">Your Purchases</a></li>
+                                    <li><a href="#">Your Favorites</a></li>
+                                    <li><a href="#">Add Credits</a></li>
+                                    <li><a href="#">Sales Statements</a></li>
+                                    <li><a href="#">Upload Item</a></li>
+                                    <li><a href="#">Edit Item</a></li>
+                                    <li><a href="#">Withdrawals</a></li>
+                                    <li><a href="#">Logout</a></li>
+                                </ul>
+                                <div class="header__user_money closed--user">$20.45</div>
                             </div>
                         </div>
                     </div>

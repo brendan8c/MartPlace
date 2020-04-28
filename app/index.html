@@ -22,16 +22,31 @@
                                     <img src="img/MartPlace.png" alt="">
                                 </a>
                             </div>
+                            <!-- todo: для бекендера | класс closed--user для отключения пользователя. в css прописан он и закомментирован! -->
                             <div class="header__button">
                                 <a href="#" class="header__button-top">Become a Seller</a>
                             </div>
-                            <a href="#" class="header__notifications-1"></a>
-                            <a href="#" class="header__notifications-2"></a>
-                            <a href="#" class="header__notifications-3"></a>
-                            <a href="#" class="header__ava" style="background-image: url(img/ava3.png);"></a>
+                            <a href="#" class="header__notifications-1 closed--user"></a>
+                            <a href="#" class="header__notifications-2 closed--user"></a>
+                            <a href="#" class="header__notifications-3 closed--user"></a>
+                            <a href="#" class="header__ava closed--user" style="background-image: url(img/ava3.png);"></a>
                             <div class="header__wrapper">
-                                <a href="#" class="header__user">Taofiq Hakim</a>
-                                <div class="header__user_money">$20.45</div>
+                                <a href="#" class="header__user closed--user">Taofiq Hakim</a>
+                                <!-- выпадающее меню пользователя  -->
+                                <ul class="header__wrapper-list">
+                                    <li><a class="header__wrapper-ico icon-user" href="#"><span>Profile Page</span></a></li>
+                                    <li><a class="header__wrapper-ico icon-home" href="#"><span>Dashboard</span></a></li>
+                                    <li><a class="header__wrapper-ico icon-cog" href="#"><span>Account Settings</span></a></li>
+                                    <li><a class="header__wrapper-ico icon-shopping-cart" href="#"><span>Your Purchases</span></a></li>
+                                    <li><a class="header__wrapper-ico icon-heart-o" href="#"><span>Your Favorites</span></a></li>
+                                    <li><a class="header__wrapper-ico icon-file-text-o" href="#"><span>Add Credits</span></a></li>
+                                    <li><a class="header__wrapper-ico icon-bar-chart" href="#"><span>Sales Statements</span></a></li>
+                                    <li><a class="header__wrapper-ico icon-upload" href="#"><span>Upload Item</span></a></li>
+                                    <li><a class="header__wrapper-ico icon-book" href="#"><span>Edit Item</span></a></li>
+                                    <li><a class="header__wrapper-ico icon-briefcase" href="#"><span>Withdrawals</span></a></li>
+                                    <li><a class="header__wrapper-ico icon-exit" href="#"><span>Logout</span></a></li>
+                                </ul>
+                                <div class="header__user_money closed--user">$20.45</div>
                             </div>
                         </div>
                     </div>

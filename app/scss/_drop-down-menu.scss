@@ -46,3 +46,79 @@
         }
     }
 }
+
+// Выпадющее меню для пользователя 
+.header__wrapper {
+    // добавляю трейгольник к выпадющему меню
+    &:hover::before {
+        transition: all .8s;
+        opacity: 1;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        left: 50px;
+        top: 30px;
+        border: 10px solid transparent;
+        border-bottom: 10px solid $blue;
+        transform: translate(-50%, 20px);
+        opacity: 0;
+    }
+    // добавляем всплывающий блок меню
+    &-list {
+        box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+        background-color: #ffffff;
+        padding-left: 20px;
+        padding-bottom: 0;
+        padding-top: 0;
+        width: 270px;
+        height: 0;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+    &:hover {
+        .header__wrapper-list {
+            transition: all .8s;
+            padding-bottom: 20px;
+            padding-top: 15px;
+            border-top: 2px solid $blue;
+            height: 523px;
+        }
+    }
+    &-ico {
+        font-family: 'icomoon';
+        font-size: 15px;
+        color: #54667a;
+        width: 230px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        &:hover {
+            color: #fff;
+            background-color: $blue;
+            border-radius: 4px;
+        }
+        span {
+            @include f400;
+            margin-left: 15px;
+            font-size: 15px;
+            color: #54667a;
+            font-weight: 500;
+            width: 180px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            &:hover {
+                color: #fff;
+                background-color: $blue;
+                border-radius: 4px;
+            }
+        }
+    }
+}

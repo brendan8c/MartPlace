@@ -30,7 +30,6 @@
     background-color: $blue;
     padding: 4px 19px;
     margin-left: auto;
-    margin-right: 217px;
     transition: .5s;
     &-top {
         font-family: 'Quicksand-Regular', sans-serif;
@@ -54,8 +53,13 @@
     }
 }
 
+// todo: для бекендера | класс closed--user для отключения пользователя. Если разкомментировать пользователь пропадёт.
+// .closed--user {
+//     display: none;
+// }
 .header__notifications-1 {
     position: relative;
+    margin-left: 230px;
     &::before {
         content: '\f0a2';
         font-family: 'icomoon';
@@ -166,6 +170,9 @@
 .header__wrapper {
     display: flex;
     flex-direction: column;
+    position: relative;
+    height: 70px;
+    margin-top: auto;
 }
 
 .header__user {
@@ -174,6 +181,7 @@
     font-size: 16px;
     color: #000;
     margin-left: 20px;
+    position: relative;
 }
 
 .header__user_money {
