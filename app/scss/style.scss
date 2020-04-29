@@ -196,13 +196,7 @@
 }
 
 .menu__list {
-    li {
-        display: inline-block;
-        &+li {
-            margin-left: 32px;
-        }
-    }
-    a {
+    &-item {
         line-height: 42px;
         color: #000;
         margin: 19px 0;
@@ -210,6 +204,12 @@
             color: $blue;
             text-shadow: 0 0 1px $blue;
             opacity: 0.8;
+        }
+    }
+    &-wrap-li {
+        display: inline-block;
+        &+.menu__list-wrap-li {
+            margin-left: 32px;
         }
     }
 }
@@ -226,7 +226,7 @@
             height: 46px;
             outline: none;
             display: block;
-            width: 100%;
+            width: 360px;
             border-radius: 22px;
             border: 1px solid #d9dfe5;
             font-size: 15px;
