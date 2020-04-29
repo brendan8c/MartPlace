@@ -21,8 +21,7 @@ li {
 }
 
 body {
-    font-family: 'Quicksand-Medium', sans-serif;
-    font-weight: 500;
+    @include f500;
     font-size: 15px;
     line-height: 24px;
     color: $gray;
@@ -36,7 +35,7 @@ body {
 }
 
 // ++++++++++++++++++++++++++++++++++++++++++++
-// прижимаем футер к низу
+// todo: прижимаем футер к низу
 html,
 body {
     height: 100%;

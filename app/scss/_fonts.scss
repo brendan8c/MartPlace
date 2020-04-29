@@ -1,27 +1,34 @@
 @font-face {
-    font-family: 'Quicksand-Bold', sans-serif;
-    src: url('../fonts/Quicksand-Bold.ttf') format('ttf');
+    font-family: 'Quicksand-Bold';
+    src: url('../fonts/Quicksand-Bold.ttf') format('truetype');
     font-weight: 700;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Quicksand-Medium', sans-serif;
-    src: url('../fonts/Quicksand-Medium.ttf') format('ttf');
+    font-family: 'Quicksand-SemiBold';
+    src: url('../fonts/Quicksand-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand-Medium';
+    src: url('../fonts/Quicksand-Medium.ttf') format('truetype');
     font-weight: 500;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Quicksand-Regular', sans-serif;
-    src: url('../fonts/Quicksand-Regular.ttf') format('ttf');
+    font-family: 'Quicksand-Regular';
+    src: url('../fonts/Quicksand-Regular.ttf') format('truetype');
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Quicksand-Light', sans-serif;
-    src: url('../fonts/Quicksand-Light.ttf') format('ttf');
+    font-family: 'Quicksand-Light';
+    src: url('../fonts/Quicksand-Light.ttf') format('truetype');
     font-weight: 300;
     font-display: swap;
 }

@@ -6,21 +6,26 @@ $blue: #0674ec;
 $blblue: #173cc3;
 $tx: #ababab;
 @mixin f700 {
-    font-family: 'Quicksand-Bold', sans-serif;
+    font-family: 'Quicksand-Bold';
     font-weight: 700;
 }
 
+@mixin f600 {
+    font-family: 'Quicksand-SemiBold';
+    font-weight: 600;
+}
+
 @mixin f500 {
-    font-family: 'Quicksand-Medium', sans-serif;
+    font-family: 'Quicksand-Medium';
     font-weight: 500;
 }
 
 @mixin f400 {
-    font-family: 'Quicksand-Regular', sans-serif;
+    font-family: 'Quicksand-Regular';
     font-weight: 400;
 }
 
 @mixin f300 {
-    font-family: 'Quicksand-Light', sans-serif;
+    font-family: 'Quicksand-Light';
     font-weight: 300;
 }

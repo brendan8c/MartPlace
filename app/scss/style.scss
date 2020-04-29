@@ -1,7 +1,7 @@
 @import 'vars';
+@import 'fonts';
 @import 'global';
 @import 'drop-down-menu';
-@import 'fonts';
 // Шапка 1 уровень
 .header__top {
     background-color: $ligr;
@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .box__logotype {
@@ -57,98 +58,92 @@
 // .closed--user {
 //     display: none;
 // }
-.header__notifications-1 {
+// уведомления - ниже
+.bell-top {
     position: relative;
-    margin-left: 230px;
-    &::before {
-        content: '\f0a2';
-        font-family: 'icomoon';
-        font-size: 20px;
-        color: #7e8fa1;
+    margin-left: 200px;
+    font-size: 20px;
+    color: #7e8fa1;
+    top: 0px;
+    right: 90px;
+    span {
         position: absolute;
-        top: -13px;
-        right: 150px;
-    }
-    &:hover::before {
-        color: $blue;
-        text-shadow: 0 0 5px $blue;
-    }
-    &::after {
-        content: '25';
-        position: absolute;
-        top: -27px;
-        right: 134px;
+        top: -17px;
+        right: -14px;
         width: 26px;
         height: 22px;
         font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         @include f500;
         background-color: #ff6a6c;
         border-radius: 10vh;
         color: #fff;
     }
-}
-
-.header__notifications-2 {
-    position: relative;
-    &::before {
-        content: '\f003';
-        font-family: 'icomoon';
-        font-size: 20px;
-        color: #7e8fa1;
-        position: absolute;
-        top: -13px;
-        right: 95px;
-    }
     &:hover::before {
         color: $blue;
         text-shadow: 0 0 5px $blue;
     }
-    &::after {
-        content: '6';
+}
+
+// письмо - ниже
+.envelope-top {
+    position: relative;
+    font-size: 20px;
+    color: #7e8fa1;
+    top: 19px;
+    right: -23px;
+    span {
         position: absolute;
-        top: -27px;
-        right: 78px;
+        top: -17px;
+        right: -15px;
         width: 22px;
         height: 22px;
         font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         @include f500;
         background-color: #62d03b;
         border-radius: 10vh;
         color: #fff;
     }
-}
-
-.header__notifications-3 {
-    position: relative;
-    &::before {
-        content: '\f07a';
-        font-family: 'icomoon';
-        font-size: 22px;
-        color: #7e8fa1;
-        position: absolute;
-        top: -13px;
-        right: 40px;
-    }
     &:hover::before {
         color: $blue;
         text-shadow: 0 0 5px $blue;
-        opacity: 0.7;
     }
-    &::after {
-        content: '2';
+}
+
+// корзина
+.cart-top {
+    position: relative;
+    font-size: 22px;
+    color: #7e8fa1;
+    top: 0px;
+    right: 50px;
+    span {
         position: absolute;
-        top: -27px;
-        right: 24px;
+        top: -17px;
+        right: -14px;
         width: 22px;
         height: 22px;
         font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         @include f500;
         background-color: $blue;
         border-radius: 10vh;
         color: #fff;
+    }
+    &:hover::before {
+        color: $blue;
+        text-shadow: 0 0 5px $blue;
+        opacity: 0.7;
     }
 }
 
@@ -162,7 +157,6 @@
     cursor: pointer;
     transition: 0.5s;
     &:hover {
-        // transform: rotate(1turn);
         box-shadow: inset 0 0 0 1px $blue, 0 0 5px $blue;
     }
 }

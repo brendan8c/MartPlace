@@ -122,3 +122,152 @@
         }
     }
 }
+
+// todo: выпадающее меню сообщений 
+.header__wrapper-bat {
+    position: relative;
+    margin-top: auto;
+    height: 80px;
+    width: 70px;
+    top: 0px;
+    right: 65px;
+    &:hover {
+        .header__wrapper-posts {
+            transition: all .8s;
+            border-top: 2px solid $blue;
+            height: 480px
+        }
+    }
+    // добавляю трейгольник к выпадющему меню
+    &:hover::before {
+        transition: all .8s;
+        opacity: 1;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        left: 32px;
+        top: 40px;
+        border: 10px solid transparent;
+        border-bottom: 10px solid $blue;
+        transform: translate(-50%, 20px);
+        opacity: 0;
+    }
+}
+
+.header__wrapper-posts {
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    background-color: #ffffff;
+    position: absolute;
+    top: 80px;
+    right: -20px;
+    z-index: 1;
+    height: 0px;
+    width: 370px;
+    overflow: hidden;
+    border-radius: 4px;
+    .user__acc {
+        height: 65px;
+        &-message {
+            @include f500;
+            font-size: 18px;
+            color: #000000;
+            &:hover {
+                color: $blue;
+            }
+        }
+        &-notice {
+            @include f600;
+            font-size: 15px;
+            color: $blue;
+            margin-left: auto;
+        }
+    }
+    li {
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flex;
+        align-items: center;
+        height: 83px;
+        border-bottom: 1px solid #e8ebf0;
+        .avatar-user {
+            width: 40px;
+            height: 40px;
+            padding: 20px;
+            border-radius: 10vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: 0.5s;
+            &:hover {
+                box-shadow: inset 0 0 0 1px #0674ec, 0 0 5px #0674ec;
+            }
+        }
+        .wrapper__messages {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-left: 15px;
+            .item-a {
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: '\f003';
+                    font-family: 'icomoon';
+                    font-size: 15px;
+                    color: $blue;
+                    right: -25px;
+                    top: 0;
+                    transition: .3s;
+                }
+                &:hover::after {
+                    transform: scale(1.1);
+                    text-shadow: 0 0 20px $blue;
+                }
+            }
+            .item-b {
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: '\f122';
+                    font-family: 'icomoon';
+                    font-size: 15px;
+                    color: #a2a2a2;
+                    right: -25px;
+                    top: 0;
+                    transition: .3s;
+                }
+                &:hover::after {
+                    color: $blue;
+                    transform: scale(1.1);
+                    text-shadow: 0 0 25px $blue;
+                }
+            }
+            .active {
+                @include f600;
+                color: $blue;
+            }
+            &-name_user {
+                @include f600;
+                font-size: 16px;
+                margin-bottom: 5px;
+                color: #000;
+                transition: .3s;
+                &:hover {
+                    color: $blue;
+                }
+            }
+            &-notice_messages {
+                @include f400;
+                font-size: 14px;
+                color: #747a86;
+            }
+            &-texet_message {
+                @include f500;
+                font-size: 15px;
+                color: #555555;
+            }
+        }
+    }
+}
