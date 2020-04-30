@@ -316,8 +316,8 @@
 
 .wrapper__wordpress {
     &:hover {
-        transition: .5s;
         .wrapper__wordpress-box {
+            transition: .5s;
             height: 440px;
             padding-top: 20px;
             padding-bottom: 20px;
@@ -370,8 +370,8 @@
 
 .wrapper__home {
     &:hover {
-        transition: .5s;
         .wrapper__home-box {
+            transition: .5s;
             height: 173px;
             padding-top: 20px;
             padding-bottom: 20px;
@@ -424,11 +424,74 @@
 
 .wrapper__products {
     &:hover {
-        transition: .5s;
         .wrapper__products-box {
+            transition: .5s;
             height: 310px;
             padding-top: 20px;
             padding-bottom: 20px;
+            border-top: 2px solid $blue;
+        }
+    }
+}
+
+// todo: всплывающее меню у pages 
+.wrapper__pages {
+    position: relative;
+    &-box {
+        box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+        border-radius: 4px;
+        position: absolute;
+        background-color: #ffffff;
+        z-index: 1;
+        width: 1140px;
+        height: 0;
+        top: 80px;
+        left: -400px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        overflow: hidden;
+        &-section {
+            &_title {
+                @include f700;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                height: 66px;
+                border-bottom: 1px solid #e8ebf0;
+            }
+            &_wrap {
+                display: flex;
+                &-categor {
+                    width: 180px;
+                    .listing {
+                        li {}
+                        a {
+                            @include f500;
+                            font-size: 15px;
+                            color: #54667a;
+                            height: 44px;
+                            display: flex;
+                            align-items: center;
+                            padding-left: 10px;
+                            &:hover {
+                                background-color: $blue;
+                                color: #ffffff;
+                                border-radius: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wrapper__pages {
+    &:hover {
+        .wrapper__pages-box {
+            transition: .5s;
+            height: 610px;
             border-top: 2px solid $blue;
         }
     }
