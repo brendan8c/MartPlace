@@ -3,4 +3,5 @@ node_modules
 .AppleDouble
 .LSOverride
 .vs
+.code-workspace
 app/css

@@ -496,3 +496,337 @@
         }
     }
 }
+
+// todo: выпадающее меню уведомлений
+.wrapper__bell {
+    position: relative;
+    margin-top: auto;
+    margin-left: 120px;
+    height: 80px;
+    width: 70px;
+    top: 0px;
+    right: 65px;
+    &-wrap {
+        position: absolute;
+        box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+        background-color: #ffffff;
+        height: 0;
+        width: 370px;
+        padding-left: 25px;
+        padding-right: 25px;
+        top: 80px;
+        right: -300px;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+    .user__block-wrap {
+        display: flex;
+        justify-content: space-between;
+        height: 65px;
+        align-items: center;
+    }
+    .user_block-title {
+        @include f500;
+        font-size: 18px;
+    }
+    .user_message-all {
+        @include f500;
+        font-size: 15px;
+        color: $blue;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 100px;
+        border-top: 1px solid #e8ebf0;
+        .icon-heart-o::before {
+            position: absolute;
+            top: 9px;
+            right: 8px;
+        }
+        .icon-comment-o::before {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
+        .icon-shopping-cart::before {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
+        .icon-star-o::before {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
+    }
+    .user-ava {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10vh;
+        margin-right: 15px;
+        padding-left: 40px;
+        transition: all .5s;
+        &:hover {
+            box-shadow: inset 0 0 0 1px #0674ec, 0 0 5px #0674ec;
+        }
+    }
+    .block-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .user_name {
+        @include f500;
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    span {
+        color: #747a86;
+        margin-right: auto;
+        margin-left: 5px;
+    }
+    .user_mess {
+        @include f400;
+        font-size: 15px;
+        color: $blue;
+        &:hover {
+            color: $blue;
+            text-shadow: 0 0 1px #0674ec;
+        }
+    }
+    .time-ago {
+        @include f400;
+        font-size: 14px;
+        color: #747a86;
+    }
+    .what-isit {
+        position: absolute;
+        font-size: 15px;
+        width: 32px;
+        height: 32px;
+        border-radius: 10vh;
+        right: 0;
+        &:hover {
+            transition: all .3s;
+            transform: scale(0.8);
+            box-shadow: inset 0 0 0 1px #0674ec, 0 0 5px #0674ec;
+        }
+    }
+    .pic1 {
+        color: #0674eb;
+        background-color: #e6f1fd;
+    }
+    .pic2 {
+        color: #7347c1;
+        background-color: #f1ecf9;
+    }
+    .pic3 {
+        color: #ff6a6c;
+        background-color: #fff0f0;
+    }
+    .pic4 {
+        color: #62d03a;
+        background-color: #fff0f0;
+    }
+}
+
+.wrapper__bell {
+    &:hover {
+        .wrapper__bell-wrap {
+            transition: .5s;
+            border-top: 2px solid $blue;
+            height: 460px;
+        }
+        // добавляю трейгольник к выпадющему меню
+        &:hover::before {
+            transition: all .5s;
+            opacity: 1;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 5;
+            left: 39px;
+            top: 40px;
+            border: 10px solid transparent;
+            border-bottom: 10px solid $blue;
+            transform: translate(-50%, 20px);
+            opacity: 0;
+        }
+    }
+}
+
+// todo: всплывающее меню покупок
+.wrapper__cart {
+    position: relative;
+    margin-top: auto;
+    height: 80px;
+    width: 70px;
+    top: 0px;
+    right: 65px;
+    &:hover {
+        .wrapper__cart-wrap {
+            transition: .5s;
+            height: 377px;
+            border-top: 2px solid $blue;
+        }
+        // добавляю трейгольник к выпадющему меню
+        &:hover::before {
+            transition: all .5s;
+            content: "";
+            position: absolute;
+            z-index: 5;
+            left: 39px;
+            top: 40px;
+            border: 10px solid transparent;
+            border-bottom: 10px solid $blue;
+            transform: translate(-50%, 20px);
+        }
+    }
+    &-wrap {
+        position: absolute;
+        box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+        background-color: #ffffff;
+        border-radius: 4px;
+        height: 0;
+        width: 400px;
+        top: 80px;
+        right: -20px;
+        overflow: hidden;
+        z-index: 1;
+        .box {
+            border-bottom: 1px solid #e8ebf0;
+            height: 123px;
+            padding-left: 25px;
+            padding-right: 25px;
+            display: flex;
+            align-items: center;
+            &-img {
+                width: 80px;
+                height: 70px;
+                margin-right: 15px;
+                padding-left: 80px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &-wrap2 {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                flex-direction: column;
+                margin-right: 15px;
+                align-items: center;
+            }
+            &-wrap {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                flex-direction: column;
+                margin-right: 15px;
+                .name-produt {
+                    @include f600;
+                    font-size: 16px;
+                    color: #000000;
+                    margin-bottom: 10px;
+                    &:hover {
+                        color: $blue;
+                        text-shadow: 0 0 1px #0674ec;
+                    }
+                }
+                .name-cms {
+                    position: relative;
+                    @include f400;
+                    font-size: 15px;
+                    color: $pur;
+                    span {
+                        margin-left: 25px;
+                    }
+                }
+                .icon-wordpress {
+                    &::before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+            &-delete {
+                position: relative;
+                background-color: #f1ecf9;
+                width: 32px;
+                height: 32px;
+                border-radius: 10vh;
+                margin-bottom: 10px;
+                &:hover {
+                    transition: all .3s;
+                    transform: scale(0.8);
+                    box-shadow: inset 0 0 0 1px #0674ec, 0 0 5px #0674ec;
+                }
+            }
+            .icon-trash-o {
+                &::before {
+                    position: absolute;
+                    color: #818c98;
+                    font-size: 15px;
+                    top: 8px;
+                    left: 10px;
+                }
+            }
+            &-cost {
+                height: 30px;
+                padding-left: 10px;
+                padding-right: 10px;
+                background-color: #e6f1fd;
+                border-radius: 10vh;
+                color: $blue;
+                font-size: 16px;
+                @include f500;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: space-between;
+            }
+            &-total {
+                @include f600;
+                font-size: 18px;
+                height: 70px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding-left: 25px;
+                padding-right: 25px;
+                span {
+                    margin-left: 30px;
+                }
+            }
+            &-bottom {
+                display: flex;
+                justify-content: space-between;
+                &-btn {
+                    height: 60px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                }
+                .btn1 {
+                    background-color: $pur;
+                    color: #ffffff;
+                }
+                .btn2 {
+                    background-color: $blue;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
