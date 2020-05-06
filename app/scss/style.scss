@@ -1954,6 +1954,7 @@
             &-searh {
                 margin-bottom: 50px;
                 position: relative;
+                width: 360px;
                 input {
                     @include f500;
                     display: block;
@@ -2785,3 +2786,6 @@
         }
     }
 }
+
+// #pur тут будут медиа запросы - ниже
+@import 'media';
