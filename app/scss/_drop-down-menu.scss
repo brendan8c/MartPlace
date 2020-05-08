@@ -129,13 +129,13 @@
     margin-top: auto;
     height: 80px;
     width: 70px;
-    top: 0px;
-    right: 65px;
+    top: 0;
+    right: 0;
     &:hover {
         .header__wrapper-posts {
             transition: all .8s;
             border-top: 2px solid $blue;
-            height: 480px
+            height: 480px;
         }
     }
     // добавляю трейгольник к выпадющему меню
@@ -160,8 +160,8 @@
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
     background-color: #ffffff;
     position: absolute;
+    right: 0;
     top: 80px;
-    right: -20px;
     z-index: 1;
     height: 0px;
     width: 370px;
@@ -465,7 +465,6 @@
                 &-categor {
                     width: 180px;
                     .listing {
-                        li {}
                         a {
                             @include f500;
                             font-size: 15px;
@@ -501,11 +500,10 @@
 .wrapper__bell {
     position: relative;
     margin-top: auto;
-    margin-left: 120px;
     height: 80px;
     width: 70px;
-    top: 0px;
-    right: 65px;
+    top: 0;
+    right: 0;
     &-wrap {
         position: absolute;
         box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
@@ -515,7 +513,7 @@
         padding-left: 25px;
         padding-right: 25px;
         top: 80px;
-        right: -300px;
+        right: 0;
         z-index: 1;
         overflow: hidden;
         border-radius: 4px;
@@ -669,8 +667,8 @@
     margin-top: auto;
     height: 80px;
     width: 70px;
-    top: 0px;
-    right: 65px;
+    top: 0;
+    right: 0;
     &:hover {
         .wrapper__cart-wrap {
             transition: .5s;
@@ -683,7 +681,7 @@
             content: "";
             position: absolute;
             z-index: 5;
-            left: 39px;
+            left: 30px;
             top: 40px;
             border: 10px solid transparent;
             border-bottom: 10px solid $blue;
@@ -698,7 +696,7 @@
         height: 0;
         width: 400px;
         top: 80px;
-        right: -20px;
+        right: 0;
         overflow: hidden;
         z-index: 1;
         .box {
@@ -829,4 +827,122 @@
             }
         }
     }
+}
+
+// todo: анимация кнопки меню
+
+/* GENERAL STYLES */
+
+.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.hamburger {
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    left: 210px;
+    top: 18px;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: $blue;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+
+/* HAMBURGER 4 */
+
+.hamburger2 .bar2,
+.hamburger3 .bar3,
+.hamburger4 .bar4 {
+    top: 13.5px;
+}
+
+.hamburger4 .bar5 {
+    bottom: 0px;
+}
+
+.hamburger4 .bar {
+    transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+}
+
+.hamburger4 .bar2 {
+    width: 1px;
+    transform: rotate(90deg);
+    left: 13.5px;
+}
+
+.hamburger4 .bar3 {
+    width: 1px;
+    left: 13.5px;
+}
+
+.checkbox4:checked+label>.hamburger4>.bar1 {
+    top: 13.5px;
+    background-color: transparent;
+}
+
+.checkbox4:checked+label>.hamburger4>.bar2 {
+    left: 0px;
+    width: 30px;
+    transform: rotate(45deg);
+}
+
+.checkbox4:checked+label>.hamburger4>.bar3 {
+    left: 0;
+    width: 30px;
+    transform: rotate(-45deg);
+}
+
+.checkbox4:checked+label>.hamburger4>.bar4 {
+    background-color: transparent;
+}
+
+.checkbox4:checked+label>.hamburger4>.bar5 {
+    bottom: 13.5px;
+    background-color: transparent;
+}
+
+// #2pur меню пользователя для адаптива 
+// todo: анимация кнопки пользовательского меню так и кнопка
+.user-btn {
+    color: $blue;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 50px;
 }

@@ -1,3 +1,4 @@
+// #2pur +
 @media (max-width: 1090px) {
     .footer {
         height: 100%;
@@ -25,12 +26,41 @@
     }
 }
 
+.header__logo-text,
+.header__logo {
+    transition: all .5s;
+    transform: translateX(150%);
+    display: contents;
+    transition: all .5s;
+    &.activ {
+        display: none;
+    }
+}
+
+// #2pur +
 @media (max-width: 904px) {
     .footer__box_one-map {
         margin-left: 0px !important;
     }
+    .wrapper__btn-a0 {
+        display: none;
+        transition: all .5s;
+        &.activ {
+            transition: all .5s;
+            transform: translateX(150%);
+            display: contents;
+        }
+    }
 }
 
+// #2pur -
+@media (min-width: 904px) {
+    .user-btn {
+        display: none;
+    }
+}
+
+// #2pur +
 @media (max-width: 760px) {
     .footer {
         padding-left: 15px;
@@ -61,6 +91,7 @@
     }
 }
 
+// #2pur +
 @media (max-width: 435px) {
     .footer__box_four-social {
         display: flex;
@@ -74,11 +105,199 @@
     }
 }
 
+// #2pur +
 @media (max-width: 410px) {
     .footer__box_four-searh {
         max-width: 100%;
         input {
             max-width: 100%;
         }
+    }
+}
+
+// #2pur +
+@media (max-width: 920px) {
+    .box__logotype {
+        margin-left: 50px;
+    }
+    .hamburger {
+        left: 0;
+    }
+    .wrapper__btn-a1 {
+        margin-right: 0;
+    }
+    .header {
+        .header__button {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        .menu {
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        &__menu {
+            margin-bottom: 15px;
+            .menu__list {
+                display: none;
+                width: 100%;
+                li {
+                    display: block;
+                    margin-left: 0;
+                    a {
+                        margin: 0;
+                    }
+                }
+            }
+            .search {
+                padding-top: 35px;
+                display: none;
+                button {
+                    top: 35px;
+                }
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+    }
+}
+
+.wrapper__home-box {
+    top: 38px;
+    left: 0px;
+    width: 100%;
+}
+
+.wrapper__products-box {
+    top: 38px;
+    left: 0px;
+    width: 100%;
+}
+
+.wrapper__wordpress-box {
+    top: 38px;
+    left: 0px;
+    width: 100%;
+}
+
+.wrapper__pages-box {
+    top: 33px;
+    left: 0px;
+    width: 100%;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+// #2pur - 
+@media (min-width: 920px) {
+    .wrapper__btn-a0 {
+        display: flex;
+    }
+    .header__button,
+    .header__ava,
+    .header__wrapper {
+        display: block;
+    }
+    .hamburger {
+        display: none;
+    }
+    .menu__list,
+    .wrapper__cart {
+        display: block;
+    }
+    .search {
+        button {
+            top: 17px;
+        }
+    }
+}
+
+// #2pur +
+@media (max-width: 800px) {
+    .hamburger {
+        left: 0;
+    }
+    .wrapper__cart-wrap {
+        right: -160px;
+    }
+    .box__logotype {
+        margin-left: 50px;
+    }
+    .header__wrapper-posts {
+        right: -160px;
+    }
+    .wrapper__bell-wrap {
+        right: -160px;
+    }
+}
+
+// #2pur +
+@media (max-width: 700px) {
+    .header__wrapper-bat,
+    .wrapper__bell {
+        display: none;
+    }
+}
+
+// #2pur +
+@media (min-width: 700px) {
+    .header__wrapper-bat,
+    .wrapper__bell {
+        display: block;
+    }
+}
+
+// #2pur +
+@media (max-width: 620px) {
+    .wrapper__cart {
+        width: 60px;
+    }
+}
+
+// #2pur +
+@media (max-width: 595px) {
+    .header__wrapper {
+        display: none;
+    }
+}
+
+// #2pur +
+@media (max-width: 470px) {
+    .hamburger {
+        left: -7px;
+    }
+    .box__logotype {
+        margin-left: 30px;
+    }
+}
+
+// #2pur +
+@media (max-width: 410px) {
+    .header__button {
+        height: auto;
+    }
+    .wrapper__cart {
+        width: 35px;
+    }
+    .cart-top {
+        right: -5px;
+    }
+    .wrapper__cart-wrap {
+        width: 317px;
+        right: -128px;
+        .box {
+            height: 140px;
+        }
+    }
+    .wrapper__cart:hover .wrapper__cart-wrap {
+        height: 412px;
+    }
+    .wrapper__cart:hover:hover::before {
+        left: 16px;
+    }
+    .box-total {
+        justify-content: center !important;
     }
 }

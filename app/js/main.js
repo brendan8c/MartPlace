@@ -26,10 +26,6 @@ $(function() {
     });
 });
 
-//todo: выбор категорий
-$(function() {
-    var mixer = mixitup('.products__item-box');
-});
 
 //todo: рейтинг звёзд
 $(function() {
@@ -50,8 +46,6 @@ $(function() {
         // заблокирует использование звёздочек
         readOnly: true
     });
-
-
 });
 //todo: прикрутил range Slider
 $(function() {
@@ -81,4 +75,28 @@ $(function() {
         $(".icon-th-large").addClass("active");
         $(".icon-list").removeClass("active");
     });
+});
+
+// todo: Кнопка меню "крестик"
+$(function() {
+    $('.checkbox4').on("click", function() {
+        $('.menu__list').slideToggle();
+        $('.search').slideToggle();
+    });
+});
+// todo: Кнопка меню пользователя
+$(function() {
+    $('.user-btn').on("click", function() {
+        $('.wrapper__btn-a0').toggleClass('activ');
+        $('.header__logo-text').toggleClass('activ');
+        $('.header__logo').toggleClass('activ');
+    });
+});
+
+//todo: выбор категорий
+// #1grn Если в HTML в доме этот плагин не найдёт этот класс, всё то,
+//#1grn что ниже этой записи работать не будет в этом файле... 
+//#1grn Поэтому засунем его в самый низ и пусть тут и лежит.
+$(function() {
+    var mixer = mixitup('.products__item-box');
 });
