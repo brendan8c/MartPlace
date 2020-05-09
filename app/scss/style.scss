@@ -2808,5 +2808,33 @@
     }
 }
 
+// #1grn Блок с градиентом - начало
+.gradient {
+    height: 180px;
+    background: linear-gradient(90deg, #622094 0%, #1236d5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 80px;
+    &-bread {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__title {
+        margin-top: 25px;
+        font-size: 30px;
+        @include f500;
+        color: #ffffff;
+    }
+}
+
+// #1grn Блок с градиентом - конец
+// #2pur блок коньеньа - начало
+.product1 {
+    height: 2900px;
+    background-color: #eff1f5;
+}
+
+// #2pur блок коньеньа - конец 
 // Подключаю адаптив (обязательно писать последним!)
 @import 'media';
