@@ -2015,106 +2015,113 @@
                     }
                 }
             }
-            &-social {
-                li {
-                    display: inline-block;
-                    &+li {
-                        margin-left: 7px;
-                    }
+        }
+    }
+}
+
+// #2grn иконки соц сетей - начало
+.footer__box_four {
+    &-link {
+        width: 42px;
+        height: 42px;
+        border-radius: 10vh;
+        transition: 0.7s;
+        &:hover {
+            transform: rotate(1turn);
+            box-shadow: inset 0 0 5px 2px $blue, 0 0 5px $blue;
+        }
+    }
+    &-social {
+        width: 360px;
+        height: 43px;
+        li {
+            display: inline-block;
+            &+li {
+                margin-left: 7px;
+            }
+            .link_f {
+                background-color: #395799;
+                position: relative;
+                &::after {
+                    content: '\ea90';
+                    position: absolute;
+                    font-family: 'icomoon';
+                    font-size: 16px;
+                    color: #ffffff;
+                    left: 13px;
+                    top: 10px;
                 }
             }
-            &-link {
-                width: 42px;
-                height: 42px;
-                border-radius: 10vh;
-                transition: 0.7s;
-                &:hover {
-                    transform: rotate(1turn);
-                    box-shadow: inset 0 0 5px 2px $blue, 0 0 5px $blue;
+            .link_t {
+                background-color: #19b2f5;
+                position: relative;
+                &::after {
+                    content: '\ea96';
+                    position: absolute;
+                    font-family: 'icomoon';
+                    font-size: 16px;
+                    color: #ffffff;
+                    left: 13px;
+                    top: 10px;
                 }
             }
-        }
-        .link_f {
-            background-color: #395799;
-            position: relative;
-            &::after {
-                content: '\ea90';
-                position: absolute;
-                font-family: 'icomoon';
-                font-size: 16px;
-                color: #ffffff;
-                left: 13px;
-                top: 10px;
+            .link_g {
+                background-color: #f05b44;
+                position: relative;
+                &::after {
+                    content: '\ea88';
+                    position: absolute;
+                    font-family: 'icomoon';
+                    font-size: 16px;
+                    color: #ffffff;
+                    left: 13px;
+                    top: 10px;
+                }
             }
-        }
-        .link_t {
-            background-color: #19b2f5;
-            position: relative;
-            &::after {
-                content: '\ea96';
-                position: absolute;
-                font-family: 'icomoon';
-                font-size: 16px;
-                color: #ffffff;
-                left: 13px;
-                top: 10px;
+            .link_p {
+                background-color: #9c0c1c;
+                position: relative;
+                &::after {
+                    content: '\ead1';
+                    position: absolute;
+                    font-family: 'icomoon';
+                    font-size: 16px;
+                    color: #ffffff;
+                    left: 13px;
+                    top: 10px;
+                }
             }
-        }
-        .link_g {
-            background-color: #f05b44;
-            position: relative;
-            &::after {
-                content: '\ea88';
-                position: absolute;
-                font-family: 'icomoon';
-                font-size: 16px;
-                color: #ffffff;
-                left: 13px;
-                top: 10px;
+            .link_i {
+                background-color: #0da6be;
+                position: relative;
+                &::after {
+                    content: '\eaca';
+                    position: absolute;
+                    font-family: 'icomoon';
+                    font-size: 16px;
+                    color: #ffffff;
+                    left: 13px;
+                    top: 10px;
+                }
             }
-        }
-        .link_p {
-            background-color: #9c0c1c;
-            position: relative;
-            &::after {
-                content: '\ead1';
-                position: absolute;
-                font-family: 'icomoon';
-                font-size: 16px;
-                color: #ffffff;
-                left: 13px;
-                top: 10px;
-            }
-        }
-        .link_i {
-            background-color: #0da6be;
-            position: relative;
-            &::after {
-                content: '\eaca';
-                position: absolute;
-                font-family: 'icomoon';
-                font-size: 16px;
-                color: #ffffff;
-                left: 13px;
-                top: 10px;
-            }
-        }
-        .link_d {
-            background-color: #ea4c89;
-            position: relative;
-            &::after {
-                content: '\eaa7';
-                position: absolute;
-                font-family: 'icomoon';
-                font-size: 16px;
-                color: #ffffff;
-                left: 13px;
-                top: 10px;
+            .link_d {
+                background-color: #ea4c89;
+                position: relative;
+                &::after {
+                    content: '\eaa7';
+                    position: absolute;
+                    font-family: 'icomoon';
+                    font-size: 16px;
+                    color: #ffffff;
+                    left: 13px;
+                    top: 10px;
+                }
             }
         }
     }
 }
 
+// #2grn иконки соц сетей - конец
 // todo: подвал - конец
 // todo: последний блок
 .futer_bottom {
@@ -2832,8 +2839,179 @@
 .product1 {
     height: 2900px;
     background-color: #eff1f5;
+    padding-top: 70px;
 }
 
+// #1pur блок контейнера основной - начало
+// первй блок
+.product1__box1 {
+    margin-right: 30px;
+    float: left;
+    .page01 {
+        height: 660px;
+        width: 750px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        background-color: #ffffff;
+        margin-bottom: 30px;
+        &__img {
+            height: 430px;
+            width: 750px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__wrap {
+            padding: 30px;
+            &_box1 {
+                display: flex;
+                justify-content: center;
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+                border-bottom: 1px solid #e8e8e8;
+                .page01btn {
+                    height: 50px;
+                    width: 190px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    @include f500;
+                    font-size: 15px;
+                    border-radius: 10vh;
+                    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+                }
+                &-btn01 {
+                    background-color: $blue;
+                    color: #ffffff;
+                    margin-right: 30px;
+                }
+                &-btn02 {
+                    background-color: #ffffff;
+                    color: $pur;
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+            }
+            &_box2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &-btn01 {
+                    height: 50px;
+                    width: 190px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    border-radius: 10vh;
+                    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+                    font-size: 15px;
+                    color: #000000;
+                    margin-right: 20px;
+                    &::before {
+                        font-size: 17px;
+                    }
+                    span {
+                        @include f400;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// второй блок
+.product1__box1 {
+    .page02 {
+        height: 2020px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+// #1pur блок контейнера основной - конец
+// #1pur блок c асайд - начало
+.product1__box2 {
+    display: flex;
+    .boxes01 {
+        width: 360px;
+        height: 554px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        background-color: #ffffff;
+        &-wrap {
+            padding: 30px;
+        }
+        &-cost {
+            width: 360px;
+            height: 105px;
+            background-color: $blue;
+            box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+            @include f500;
+            font-size: 36px;
+            color: #ffffff;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            span {
+                font-size: 18px;
+            }
+        }
+        &-radio {
+            margin-bottom: 20px;
+            span {
+                @include f500;
+                font-size: 18px;
+                margin-left: 15px;
+                color: #333333;
+            }
+        }
+        &-text {
+            @include f400;
+            font-size: 16px;
+            color: #555555;
+            width: 260px;
+            margin-left: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ececec;
+            margin-bottom: 30px;
+        }
+        .boxes01btn {
+            width: 300px;
+            height: 55px;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            color: #ffffff;
+            @include f500;
+            font-size: 16px;
+            border-radius: 10vh;
+        }
+        &-btn01 {
+            background-color: $blue;
+            margin-bottom: 30px;
+        }
+        &-btn02 {
+            background-color: $pur;
+            span {
+                margin-left: 15px;
+            }
+        }
+    }
+    .boxes02 {}
+    .boxes03 {}
+    .boxes04 {}
+}
+
+// #1pur блок c асайд - конец
 // #2pur блок контента - конец 
 // Подключаю адаптив (обязательно писать последним!)
 @import 'media';
