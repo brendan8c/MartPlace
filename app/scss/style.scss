@@ -2938,12 +2938,14 @@
 // #1pur блок c асайд - начало
 .product1__box2 {
     display: flex;
+    flex-direction: column;
     .boxes01 {
         width: 360px;
         height: 554px;
         border-radius: 4px;
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
         background-color: #ffffff;
+        margin-bottom: 30px;
         &-wrap {
             padding: 30px;
         }
@@ -2993,10 +2995,11 @@
                     content: '\ea10';
                     font-family: 'icomoon';
                     font-size: 10px;
-                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     color: #ffffff;
                     position: absolute;
-                    display: inline-block;
                     height: 20px;
                     width: 20px;
                     border-radius: 50%;
@@ -3044,9 +3047,132 @@
             }
         }
     }
-    .boxes02 {}
-    .boxes03 {}
-    .boxes04 {}
+    .boxes02 {
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-radius: 4px;
+        background-color: #ffffff;
+        width: 360px;
+        height: 320px;
+        padding: 10px 30px 30px 30px;
+        margin-bottom: 30px;
+        .star-product {
+            margin-right: 0;
+        }
+        .star {
+            justify-content: center;
+        }
+        &__wrapp+.boxes02__wrapp {
+            border-top: 1px solid #ececec;
+        }
+        &__wrapp {
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-nom {
+                @include f400;
+                font-size: 15px;
+                color: #7e7e7e;
+                margin-left: 10px;
+            }
+            &-title1 {
+                color: $blue;
+            }
+            &-title2 {
+                color: $pur;
+            }
+            &-title3 {
+                color: #58c9e9;
+            }
+            &-txt {
+                @include f400;
+                font-size: 16px;
+                color: #555555;
+            }
+            &-number {
+                @include f500;
+                font-size: 18px;
+                color: #333333;
+            }
+        }
+    }
+    .boxes03 {
+        width: 360px;
+        height: 610px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-radius: 4px;
+        background-color: #ffffff;
+        padding: 30px;
+        margin-bottom: 30px;
+        &__title {
+            @include f400;
+            font-size: 20px;
+            color: #000000;
+            border-bottom: 1px solid #ececec;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        &__wrapper {
+            display: flex;
+            .list1 {
+                width: 130px;
+            }
+            .list2 {
+                width: 170px;
+            }
+        }
+        &__list {
+            li {
+                @include f500;
+                font-size: 15px;
+                color: #333333;
+                height: 38px;
+            }
+            &-right {
+                @include f400;
+                font-size: 15px;
+                color: #555555;
+            }
+            &-left {}
+            .margin1 {
+                margin-bottom: 20px;
+            }
+            .hashtegs {
+                a {
+                    color: $blue;
+                    &:hover {
+                        text-shadow: 0 0 1px $blue;
+                    }
+                }
+            }
+        }
+    }
+    .boxes04 {
+        width: 360px;
+        height: 459px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-radius: 4px;
+        background-color: #ffffff;
+        padding: 30px;
+        text-align: center;
+        &__title {
+            @include f400;
+            font-size: 20px;
+            border-bottom: 1px solid #ececec;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            width: 300px;
+        }
+        // &__ava {
+        //     width: 100px;
+        //     height: 100px;
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        //     background-position: center;
+        // }
+    }
 }
 
 // #1pur блок c асайд - конец
