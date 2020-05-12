@@ -192,6 +192,23 @@
 
 // #2pur - 
 @media (min-width: 920px) {
+    .wrapper__home-box {
+        width: 270px;
+        top: 80px;
+    }
+    .wrapper__products-box {
+        width: 270px;
+        top: 80px;
+    }
+    .wrapper__wordpress-box {
+        width: 270px;
+        top: 80px;
+    }
+    .wrapper__pages-box {
+        width: 1140px;
+        left: -400px;
+        top: 80px;
+    }
     .wrapper__btn-a0 {
         display: flex;
     }
