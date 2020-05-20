@@ -2291,14 +2291,14 @@
 // todo: блок с поиском - нижний блок - конец
 // todo: левый бар - начало
 .page {
-    height: 1880px;
-    padding-top: 80px;
     background-color: #eff1f5;
+    display: flex;
     &__big-wrap {
-        display: flex;
+        height: 1978px;
+        padding-top: 80px;
     }
     &__aside {
-        margin-right: 15px;
+        float: left;
         &-block {
             width: 264px;
             max-height: 372px;
@@ -2449,9 +2449,7 @@
         display: flex;
         flex-wrap: wrap;
         &-box {
-            flex: 1 263px;
-            margin-left: 12px;
-            margin-right: 12px;
+            margin-left: 29px;
             margin-bottom: 30px;
             height: 372px;
             width: 263px;
@@ -3357,5 +3355,72 @@
 
 // #1pur блок c асайд - конец
 // #2pur блок контента - конец 
+// #2grn хлебные крошки блок - начало 
+.container-bread {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// #2grn хлебные крошки блок - конец
+// #2pur page "favorite" - start 
+.headertop__wrapper-link-title {
+    @include f400;
+    font-size: 24px;
+    color: #000;
+    padding-right: 90px;
+    border-right: 1px solid #eceff2;
+}
+
+.headertop__wrapper-link-menu {
+    @include f400;
+    font-size: 16px;
+    color: #555555;
+    position: relative;
+    width: 140px;
+    text-align: center;
+    border-right: 1px solid #eceff2;
+    cursor: pointer;
+    &:hover {
+        color: #0674ec;
+        text-shadow: 0 0 1px #0674ec;
+    }
+    &::after {
+        content: '\f078';
+        font-family: 'icomoon';
+        position: absolute;
+        font-size: 12px;
+        color: #555555;
+        right: 15px;
+        &:hover {
+            color: #0674ec;
+            text-shadow: 0 0 1px #0674ec;
+        }
+    }
+}
+
+// .favorites-boxes {
+//     width: 360px;
+//     height: 530px;
+// }
+// .favorites-img {
+//     width: 361px;
+//     height: 230px;
+// }
+.page__pagination-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.page__pagination-favorite {
+    margin-left: 0;
+}
+
+.page__content-favorites {
+    display: flex;
+    justify-content: center;
+}
+
+// #2pur page "favorite" - end 
 // Подключаю адаптив (обязательно писать последним!)
 @import 'media';
