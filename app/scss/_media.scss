@@ -96,6 +96,8 @@
     .footer__box_four-social {
         display: flex;
         flex-wrap: wrap;
+        width: max-content;
+        height: 100%;
         li {
             flex: 80px
         }

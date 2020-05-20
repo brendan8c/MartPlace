@@ -92,6 +92,16 @@ $(function() {
         $('.header__logo').toggleClass('activ');
     });
 });
+// todo: Stack of tabs 
+$('.page02 .tab').on('click', function(event) {
+    var id = $(this).attr('data-id');
+    $('.page02').find('.tab-item').removeClass('page02_tab-content-active-tab').hide();
+    $('.page02 .page02_tabs').find('.tab').removeClass('page02_tabs-active');
+    $(this).addClass('page02_tabs-active');
+    $('#' + id).addClass('page02_tab-content-active-tab').fadeIn();
+    return false;
+});
+
 
 //todo: выбор категорий
 // #1grn Если в HTML в доме этот плагин не найдёт этот класс, всё то,
