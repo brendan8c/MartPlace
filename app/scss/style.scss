@@ -3399,14 +3399,6 @@
     }
 }
 
-// .favorites-boxes {
-//     width: 360px;
-//     height: 530px;
-// }
-// .favorites-img {
-//     width: 361px;
-//     height: 230px;
-// }
 .page__pagination-wrapper {
     display: flex;
     justify-content: center;
@@ -3422,5 +3414,191 @@
 }
 
 // #2pur page "favorite" - end 
+// #1grn Мануал - начало
+.manual-login {
+    background-color: #eff1f5;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-form {
+        @include f500;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $blue;
+        width: 130px;
+        height: 100px;
+        border: 2px solid $pur;
+        border-radius: 10vh;
+        background-color: #ffffff;
+        &:hover {
+            box-shadow: inset 0 0 0 1px $pur, 0 0 10px $pur;
+            transform: scale(0.9);
+        }
+    }
+}
+
+.fancybox-content {
+    background-color: transparent;
+}
+
+// #1grn Мануал - конец
+// #1grn page "login" - start 
+.block-popap {
+    // скрыл цвет тут, на форме он не нужен. 
+    // background-color: #eff1f5;
+    background-color: transparent;
+    height: 804px;
+    display: none;
+    justify-content: center;
+    padding-top: 70px;
+    &__wrap {
+        background-color: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        width: 555px;
+        height: 611px;
+        &-box1 {
+            border-bottom: 1px solid #e8ebf0;
+            padding-top: 60px;
+            text-align: center;
+            &-title {
+                @include f400;
+                font-size: 26px;
+                margin-bottom: 30px;
+            }
+            &-description {
+                @include f400;
+                font-size: 16px;
+                color: #555555;
+                margin-bottom: 30px;
+            }
+        }
+        &-box2 {
+            margin-left: 48px;
+            margin-right: 48px;
+            margin-top: 30px;
+            &-title {
+                @include f500;
+                font-size: 16px;
+                margin-top: 30px;
+                margin-bottom: 5px;
+            }
+            .input-login {
+                width: 455px;
+                height: 51px;
+                background-color: #f4f5f8;
+                border: none;
+                outline: none;
+                padding-left: 20px;
+                &::placeholder {
+                    @include f400;
+                    font-size: 16px;
+                    color: #898f96;
+                }
+            }
+            &-btn {
+                background-color: $blue;
+                color: #ffffff;
+                width: 190px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                border-radius: 25px;
+                box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+                margin-top: 30px;
+            }
+            &-wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                margin-top: 30px;
+                &-title {
+                    @include f400;
+                    font-size: 16px;
+                    color: #898f96;
+                    margin-right: 5px;
+                }
+                &-link {
+                    @include f400;
+                    font-size: 16px;
+                    color: $blue;
+                    margin-right: 5px;
+                }
+                span {
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+
+// #2pur checkbox - start 
+// Выключаем стандартный стиль checkbox'а 
+.checkbox-login01 {
+    display: none;
+}
+
+// Так будет выглядеть checkbox в состянии off
+.style-login01 {
+    // inline-block для того, что-бы текст был напротив
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 4px solid #e6e9ed;
+    background-color: #ffff;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    // Так будет выглядеть checkbox в состянии on "checked"
+    &::before {
+        content: '\f078';
+        position: absolute;
+        font-family: "icomoon";
+        color: #ffffff;
+        font-size: 10px;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #0674ec;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: .3s;
+    }
+}
+
+// Стили для текста
+.text-login01 {
+    cursor: pointer;
+}
+
+.btn__login01-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+// Соеденяем при нажатии становится не прозрачным стиль
+.checkbox-login01:checked+.style-login01::before {
+    opacity: 1;
+}
+
+// #2pur checkbox - end 
+// #1grn page "login" - end
 // Подключаю адаптив (обязательно писать последним!)
 @import 'media';
