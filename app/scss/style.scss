@@ -3696,5 +3696,163 @@
 }
 
 // #1grn page "Conditions" - end
+// #1grn page "Contact" - start
+.contactpage {
+    height: 1330px;
+    background-color: #eff1f5;
+    padding-top: 120px;
+    &-title1 {
+        @include f500;
+        font-size: 30px;
+        color: #ffffff;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    &-title2 {
+        @include f400;
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__title {
+        @include f400;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 35px;
+        span {
+            color: $blue;
+            margin-left: 10px;
+        }
+    }
+    &__text {
+        @include f400;
+        font-size: 16px;
+        color: #555555;
+        text-align: center;
+        width: 680px;
+        margin-bottom: 65px;
+    }
+    &__box {
+        width: 360px;
+        height: 295px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        background-color: #ffffff;
+        padding-top: 50px;
+        &-img {
+            font-size: 48px;
+            color: $blue;
+            text-align: center;
+            margin-bottom: 50px;
+            &-rotay {
+                font-size: 48px;
+                color: $blue;
+                text-align: center;
+                margin-bottom: 50px;
+                transform: rotate(135deg);
+            }
+        }
+        &-title {
+            @include f500;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        &-text {
+            @include f400;
+            font-size: 16px;
+            color: #555555;
+            text-align: center;
+            padding: 0 40px;
+        }
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__form {
+        width: 1140px;
+        height: 592px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        padding-top: 60px;
+        &-title {
+            @include f400;
+            font-size: 24px;
+            text-align: center;
+            padding-bottom: 35px;
+            border-bottom: 1px solid #eff1f5;
+        }
+        &-wrap {
+            margin: 0 auto;
+            margin-top: 40px;
+            width: 750px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &-field {
+                width: 359px;
+                height: 48px;
+                border: 1px solid #eff1f5;
+                padding-left: 52px;
+                padding-right: 52px;
+                outline: none;
+                margin-bottom: 30px;
+                &::placeholder {
+                    color: #9e9e9e;
+                }
+            }
+            &-texted {
+                width: 748px;
+                height: 131px;
+                border: 1px solid #eff1f5;
+                padding-left: 52px;
+                padding-right: 52px;
+                padding-top: 20px;
+                color: #9e9e9e;
+                outline: none;
+                resize: none;
+                &::placeholder {
+                    color: #9e9e9e;
+                }
+            }
+        }
+    }
+    &__btn {
+        @include f400;
+        font-size: 16px;
+        color: #ffffff;
+        background-color: $blue;
+        width: 170px;
+        height: 50px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+// #1grn page "Contact" - end
+// #1grn page "Contact - box" - start
+.contactbox01 {
+    background-color: #e3e6ec;
+    height: 400px;
+}
+
+// #1grn page "Contact - box" - end
 // Подключаю адаптив (обязательно писать последним!)
 @import 'media';
