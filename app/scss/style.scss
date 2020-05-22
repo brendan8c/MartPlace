@@ -3846,13 +3846,99 @@
     }
 }
 
-// #1grn page "Contact" - end
-// #1grn page "Contact - box" - start
 .contactbox01 {
     background-color: #e3e6ec;
     height: 400px;
 }
 
-// #1grn page "Contact - box" - end
+// #1grn page "Contact" - end
+// #1grn page "Register" - start
+.register {
+    height: 1100px;
+    background-color: #eff1f5;
+    padding-top: 70px;
+    &__box {
+        margin: 0 auto;
+        border-radius: 4px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        width: 555px;
+        height: 915px;
+        background-color: #ffffff;
+        &_section1 {
+            padding-top: 60px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eff1f5;
+            &-title {
+                @include f400;
+                font-size: 26px;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            &-text {
+                @include f400;
+                font-size: 16px;
+                color: #555555;
+                text-align: center;
+            }
+        }
+        &_section2 {
+            padding-left: 50px;
+            padding-right: 50px;
+            &-title {
+                @include f500;
+                font-size: 16px;
+                margin-top: 25px;
+                margin-bottom: 10px;
+            }
+            &-input {
+                width: 455px;
+                height: 51px;
+                background-color: #f4f5f8;
+                padding-left: 25px;
+                padding-right: 25px;
+                border: none;
+                outline: none;
+                &::placeholder {
+                    @include f400;
+                    color: #898f96;
+                    font-size: 16px;
+                }
+            }
+            &-btn {
+                width: 190px;
+                height: 50px;
+                box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+                background-color: $blue;
+                border-radius: 25px;
+                color: #ffffff;
+                @include f500;
+                font-size: 15px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                margin-top: 32px;
+            }
+            &-wrapper {
+                margin-top: 30px;
+                display: flex;
+                &-text {
+                    @include f400;
+                    font-size: 16px;
+                    color: #898f96;
+                }
+                &-link {
+                    @include f400;
+                    font-size: 16px;
+                    color: $blue;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}
+
+// #1grn page "Register" - end
 // Подключаю адаптив (обязательно писать последним!)
 @import 'media';
