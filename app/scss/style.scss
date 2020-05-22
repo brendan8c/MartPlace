@@ -3940,5 +3940,73 @@
 }
 
 // #1grn page "Register" - end
+// #1grn page "Recovery" - start
+.recovery {
+    height: 649px;
+    background-color: #eff1f5;
+    padding-top: 70px;
+    &__box {
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        width: 555px;
+        height: 455px;
+        margin: 0 auto;
+        &_one {
+            padding-top: 60px;
+            border-bottom: 1px solid #eff1f5;
+            &-title {
+                @include f400;
+                font-size: 16px;
+                color: #555555;
+                padding-left: 45px;
+                padding-right: 45px;
+                padding-bottom: 30px;
+            }
+        }
+        &_two {
+            padding-top: 40px;
+            padding-left: 45px;
+            padding-right: 45px;
+            &-title {
+                @include f500;
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            &-input {
+                width: 455px;
+                height: 51px;
+                background-color: #f4f5f8;
+                padding-left: 20px;
+                padding-right: 20px;
+                border: none;
+                outline: none;
+                margin-bottom: 30px;
+                &::placeholder {
+                    @include f400;
+                    font-size: 16px;
+                    color: #898f96;
+                }
+            }
+            &-btn {
+                width: 190px;
+                height: 50px;
+                border-radius: 25px;
+                background-color: $blue;
+                box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+                color: #ffffff;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+// #1grn page "Recovery" - end
 // Подключаю адаптив (обязательно писать последним!)
 @import 'media';
