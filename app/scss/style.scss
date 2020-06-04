@@ -4098,5 +4098,128 @@
 }
 
 // #1grn page "how-It-works" - end
+// #1grn page "pricing-plan" - start
+.pricingplan {
+    height: 983px;
+    background-color: #eff1f5;
+    padding-top: 120px;
+    text-align: center;
+    &__title {
+        @include f400;
+        font-size: 36px;
+        margin-bottom: 35px;
+        span {
+            color: $blue;
+        }
+    }
+    &__text {
+        @include f400;
+        font-size: 16px;
+        color: #555555;
+        width: 680px;
+        margin-bottom: 70px;
+        display: inline-block;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__box {
+        width: 360px;
+        height: 570px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 4px 0px #6c6f731a;
+        padding: 30px;
+        text-align: center;
+        &_title {
+            @include f500;
+            font-size: 24px;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #dde4f3;
+        }
+        &_cost {
+            @include f400;
+            font-size: 36px;
+            margin-bottom: 35px;
+            sup {
+                font-size: 18px;
+            }
+            span {
+                font-size: 16px;
+                color: #555555;
+            }
+        }
+        &_price {
+            margin-bottom: 20px;
+            li {
+                padding-left: 20px;
+                position: relative;
+                text-align: left;
+                @include f400;
+                font-size: 16px;
+                color: #555555;
+                span {
+                    @include f500;
+                    color: #000000;
+                    text-shadow: 0 0 1px #000000;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    border-radius: 50%;
+                    background-color: #c5cad4;
+                    width: 7px;
+                    height: 7px;
+                    top: 10px;
+                    left: 0;
+                }
+                &+li {
+                    margin-top: 15px;
+                }
+            }
+        }
+        &_btn {
+            border-radius: 4px;
+            box-shadow: 0px 4px 30px 0px #0000001a;
+            width: 300px;
+            height: 50px;
+            color: #ffffff;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        &_btn1 {
+            background-color: #ff6a6c;
+        }
+        &_btn2 {
+            background-color: #0674ed;
+        }
+        &_btn3 {
+            background-color: #feb71d;
+        }
+    }
+    &__box1 {
+        border-top: 3px solid #ff6a6c;
+    }
+    &__box2 {
+        border-top: 3px solid #0674ed;
+    }
+    &__box3 {
+        border-top: 3px solid #feb71d;
+    }
+}
+
+.icon-question {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #555555 !important;
+    text-shadow: none !important;
+}
+
+// #1grn page "pricing-plan" - end
 // Подключаю адаптив (обязательно писать последним!)
 @import 'media';
