@@ -4008,5 +4008,95 @@
 }
 
 // #1grn page "Recovery" - end
+// #1grn page "how-It-works" - start
+.gradient__product-ceter {
+    height: 280px;
+}
+
+.gradient__product-title1-center {
+    @include f500;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gradient__product-title2-center {
+    @include f300;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.breadcrumbs__list-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.howitworks {
+    height: 1650px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    &__box {
+        height: 550px;
+        padding-top: 98px;
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-color {
+            background-color: #eff1f5;
+        }
+        &_img {
+            width: 458px;
+            height: 352px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &_wrap {
+            width: 458px;
+            height: 352px;
+            &-title {
+                @include f400;
+                font-size: 30px;
+                margin-bottom: 45px;
+                margin-top: 37px;
+            }
+            &-text {
+                @include f400;
+                font-size: 16px;
+                color: #555555;
+                margin-bottom: 30px;
+            }
+            &-btn {
+                width: 170px;
+                height: 50px;
+                background-color: #0674ec;
+                box-shadow: 0px 4px 30px 0px #0000001a;
+                border-radius: 25px;
+                @include f400;
+                font-size: 16px;
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                transition: all .3s;
+                &:hover {
+                    background-color: #fff;
+                    color: $blue;
+                    box-shadow: 0 0 10px $blue;
+                }
+            }
+        }
+    }
+}
+
+// #1grn page "how-It-works" - end
 // Подключаю адаптив (обязательно писать последним!)
 @import 'media';
