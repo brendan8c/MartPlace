@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MartPlace</title>
+<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+<link rel="stylesheet" href="css/libs.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <!-- Шапка 1 уровень -->
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="header__top-inner">
+                            <div class="box__logotype">
+                                <a class="header__logo">
+                                    <img src="img/Logo.png" alt="">
+                                </a>
+                                <a class="header__logo-text">
+                                    <img src="img/MartPlace.png" alt="">
+                                </a>
+                            </div>
+                            <!-- todo: для бекендера | класс closed--user для отключения пользователя. в css прописан он и закомментирован! -->
+                            <div class="wrapper__btn-a0">
+                                <div class="header__button">
+                                    <a href="#" class="header__button-top">Become a Seller</a>
+                                </div>
+                                <div class="wrapper__btn-a1">
+                                    <div class="wrapper__bell closed--user">
+                                        <a href="#" class="icon-bell-o bell-top"><span>25</span></a>
+                                        <!-- выпадающее меню уведомлений -->
+                                        <ul class="wrapper__bell-wrap">
+                                            <!-- шапка - начало  -->
+                                            <div class="user__block-wrap">
+                                                <div class="user_block-title">My Notifications</div>
+                                                <a href="#" class="user_message-all">View All</a>
+                                            </div>
+                                            <!-- шапка - конец  -->
+                                            <!-- блок - начало  -->
+                                            <li>
+                                                <a href="#" class="user-ava" style="background-image: url(../img/ava3.png)"></a>
+                                                <div class="block-wrap">
+                                                    <div class="user_name">Anderson<span>added to Favourite</span></div>
+                                                    <a href="#" class="user_mess">Marketify Coffee Shop</a>
+                                                    <div class="time-ago">Just now</div>
+                                                </div>
+                                                <div class="what-isit pic1 icon-heart-o"></div>
+                                            </li>
+                                            <!-- блок - конец  -->
+                                            <!-- блок - начало  -->
+                                            <li>
+                                                <a href="#" class="user-ava" style="background-image: url(../img/ava3.png)"></a>
+                                                <div class="block-wrap">
+                                                    <div class="user_name">Anderson<span>commented on</span></div>
+                                                    <a href="#" class="user_mess">MartPlace Extension Bundle</a>
+                                                    <div class="time-ago">2 hours ago</div>
+                                                </div>
+                                                <div class="what-isit pic2 icon-comment-o"></div>
+                                            </li>
+                                            <!-- блок - конец  -->
+                                            <!-- блок - начало  -->
+                                            <li>
+                                                <a href="#" class="user-ava" style="background-image: url(../img/ava3.png)"></a>
+                                                <div class="block-wrap">
+                                                    <div class="user_name">Anderson<span>Purchased</span></div>
+                                                    <a href="#" class="user_mess">Bryson-Responsive Template</a>
+                                                    <div class="time-ago">6 hours ago</div>
+                                                </div>
+                                                <div class="what-isit pic3 icon-shopping-cart"></div>
+                                            </li>
+                                            <!-- блок - конец  -->
+                                            <!-- блок - начало  -->
+                                            <li>
+                                                <a href="#" class="user-ava" style="background-image: url(../img/ava3.png)"></a>
+                                                <div class="block-wrap">
+                                                    <div class="user_name">Anderson<span>Purchased</span></div>
+                                                    <a href="#" class="user_mess">Rida-Responsive vCard Temp...</a>
+                                                    <div class="time-ago">2 days ago</div>
+                                                </div>
+                                                <div class="what-isit pic4 icon-star-o"></div>
+                                            </li>
+                                            <!-- блок - конец  -->
+                                        </ul>
+                                    </div>
+                                    <div class="header__wrapper-bat closed--user">
+                                        <a href="#" class="icon-envelope-o envelope-top closed--user"><span>6</span></a>
+                                        <!-- выпадающее меню сообщений -->
+                                        <ul class="header__wrapper-posts">
+                                            <li class="user__acc">
+                                                <a href="#" class="user__acc-message">My Messages</a>
+                                                <a href="#" class="user__acc-notice">View All</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="avatar-user" style="background-image: url(img/ava3.png);"></a>
+                                                <div class="wrapper__messages">
+                                                    <a href="#" class="wrapper__messages-name_user item-a">Washim</a>
+                                                    <a href="#" class="wrapper__messages-notice_messages active">Just now</a>
+                                                    <a href="#" class="wrapper__messages-texet_message">Hello John Smith! Nunc placerat id...</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="avatar-user" style="background-image: url(img/ava3.png);"></a>
+                                                <div class="wrapper__messages">
+                                                    <a href="#" class="wrapper__messages-name_user item-a">Bulbul Ahmed</a>
+                                                    <a href="#" class="wrapper__messages-notice_messages active">2 hours ago</a>
+                                                    <a href="#" class="wrapper__messages-texet_message">Hello John Smith! Nunc placerat id...</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="avatar-user" style="background-image: url(img/ava3.png);"></a>
+                                                <div class="wrapper__messages">
+                                                    <a href="#" class="wrapper__messages-name_user item-b">EchoTheme</a>
+                                                    <a href="#" class="wrapper__messages-notice_messages">Jul 16</a>
+                                                    <a href="#" class="wrapper__messages-texet_message">Hello John Smith! Nunc placerat id...</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="avatar-user" style="background-image: url(img/ava3.png);"></a>
+                                                <div class="wrapper__messages">
+                                                    <a href="#" class="wrapper__messages-name_user">Themeluva</a>
+                                                    <a href="#" class="wrapper__messages-notice_messages">May 23</a>
+                                                    <a href="#" class="wrapper__messages-texet_message">Hello John Smith! Nunc placerat id...</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="avatar-user" style="background-image: url(img/ava3.png);"></a>
+                                                <div class="wrapper__messages">
+                                                    <a href="#" class="wrapper__messages-name_user">Adnan</a>
+                                                    <a href="#" class="wrapper__messages-notice_messages">Mar 26</a>
+                                                    <a href="#" class="wrapper__messages-texet_message">Hello John Smith! Nunc placerat id...</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="wrapper__cart">
+                                        <a href="#" class="icon-shopping-cart cart-top"><span>2</span></a>
+                                        <!-- всплывающее меню покупок -->
+                                        <div class="wrapper__cart-wrap">
+                                            <!-- #pur бокс - начало -->
+                                            <div class="box">
+                                                <a href="#" class="box-img" style="background-image: url(img/BGcopy1.jpg);"></a>
+                                                <div class="box-wrap">
+                                                    <a href="#" class="name-produt">Finance and Consulting Business Theme</a>
+                                                    <a href="#" class="name-cms icon-wordpress"><span>Wordpress</span></a>
+                                                </div>
+                                                <div class="box-wrap2">
+                                                    <a href="#" class="box-delete icon-trash-o"></a>
+                                                    <div class="box-cost">$60</div>
+                                                </div>
+                                            </div>
+                                            <!-- #pur бокс - начало -->
+                                            <div class="box">
+                                                <a href="#" class="box-img" style="background-image: url(img/BGcopy2.jpg);"></a>
+                                                <div class="box-wrap">
+                                                    <a href="#" class="name-produt">Flounce - Multipurpose 
+                                                OpenCart Theme</a>
+                                                    <a href="#" class="name-cms icon-wordpress"><span>Wordpress</span></a>
+                                                </div>
+                                                <div class="box-wrap2">
+                                                    <a href="#" class="box-delete icon-trash-o"></a>
+                                                    <div class="box-cost">$20</div>
+                                                </div>
+                                            </div>
+                                            <!-- #pur бокс - начало -->
+                                            <div class="box-total">Total :<span>$80</span></div>
+                                            <!-- #pur бокс - начало -->
+                                            <div class="box-bottom">
+                                                <a href="#" class="box-bottom-btn btn1">Go to Cart</a>
+                                                <a href="##" class="box-bottom-btn btn2">Go to Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- todo: =============================  -->
+                                <div class="wrapper__btn-a2">
+                                    <a href="#" class="header__ava closed--user" style="background-image: url(img/ava3.png);"></a>
+                                    <div class="header__wrapper">
+                                        <a href="#" class="header__user closed--user">Taofiq Hakim</a>
+                                        <!-- выпадающее меню пользователя  -->
+                                        <ul class="header__wrapper-list">
+                                            <li><a class="header__wrapper-ico icon-user" href="#"><span>Profile Page</span></a></li>
+                                            <li><a class="header__wrapper-ico icon-home" href="#"><span>Dashboard</span></a></li>
+                                            <li><a class="header__wrapper-ico icon-cog" href="#"><span>Account Settings</span></a></li>
+                                            <li><a class="header__wrapper-ico icon-shopping-cart" href="#"><span>Your Purchases</span></a></li>
+                                            <li><a class="header__wrapper-ico icon-heart-o" href="#"><span>Your Favorites</span></a></li>
+                                            <li><a class="header__wrapper-ico icon-file-text-o" href="#"><span>Add Credits</span></a></li>
+                                            <li><a class="header__wrapper-ico icon-bar-chart" href="#"><span>Sales Statements</span></a></li>
+                                            <li><a class="header__wrapper-ico icon-upload" href="#"><span>Upload Item</span></a></li>
+                                            <li><a class="header__wrapper-ico icon-book" href="#"><span>Edit Item</span></a></li>
+                                            <li><a class="header__wrapper-ico icon-briefcase" href="#"><span>Withdrawals</span></a></li>
+                                            <li><a class="header__wrapper-ico icon-exit" href="#"><span>Logout</span></a></li>
+                                        </ul>
+                                        <div class="header__user_money closed--user">$20.45</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #2pur Кнопка меню пользователя, для адаптива - начало -->
+                            <div class="user-btn icon-user-circle"></div>
+                            <!-- #2pur Кнопка меню пользователя, для адаптива - конец -->
+                        </div>
+                    </div>
+                </div>
+                <!--#grn шапка 2 уровень -->
+                <div class="header__menu">
+                    <div class="container">
+                        <nav class="menu">
+                            <!-- #2grn кнопка меню "крестик" - начало -->
+                            <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden">
+                            <label class="hamburger-none" for="checkbox4">
+                                <div class="hamburger hamburger4">
+                                    <span class="bar bar1"></span>
+                                    <span class="bar bar2"></span>
+                                    <span class="bar bar3"></span>
+                                    <span class="bar bar4"></span>
+                                    <span class="bar bar5"></span>
+                                </div>
+                            </label>
+                            <!-- #2grn кнопка меню "крестик" - конец -->
+                            <ul class="menu__list">
+                                <li class="menu__list-wrap-li">
+                                    <div class="wrapper__home">
+                                        <a class="menu__list-item" href="#">HOME</a>
+                                        <!-- всплывающее меню у home  -->
+                                        <ul class="wrapper__home-box">
+                                            <li><a class="home-items" href="#">Home One Multi User</a></li>
+                                            <li><a class="home-items" href="#">Home Two Single User</a></li>
+                                            <li><a class="home-items" href="#">Home Three Product</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__list-wrap-li">
+                                    <div class="wrapper__products">
+                                        <a class="menu__list-item" href="#">all products</a>
+                                        <!-- всплывающее меню у products -->
+                                        <ul class="wrapper__products-box">
+                                            <li><a class="prod-items" href="#">Recent Items</a></li>
+                                            <li><a class="prod-items" href="#">Popular Items</a></li>
+                                            <li><a class="prod-items" href="#">Featured Items</a></li>
+                                            <li><a class="prod-items" href="#">Free Templates</a></li>
+                                            <li><a class="prod-items" href="#">Follow Feed</a></li>
+                                            <li><a class="prod-items" href="#">Top Authors</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__list-wrap-li">
+                                    <div class="wrapper__wordpress">
+                                        <a class="menu__list-item" href="#">wordpress</a>
+                                        <!-- всплывающее меню у wordpress -->
+                                        <ul class="wrapper__wordpress-box">
+                                            <li><a class="word-items" href="#">Popular Items</a></li>
+                                            <li><a class="word-items" href="#">Admin Templates</a></li>
+                                            <li><a class="word-items" href="#">Blog / Magazine / News</a></li>
+                                            <li><a class="word-items" href="#">Creative</a></li>
+                                            <li><a class="word-items" href="#">Corporate Business</a></li>
+                                            <li><a class="word-items" href="#">Resume Portfolio</a></li>
+                                            <li><a class="word-items" href="#">eCommerce</a></li>
+                                            <li><a class="word-items" href="#">Entertainment</a></li>
+                                            <li><a class="word-items" href="#">Landing Pages</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__list-wrap-li">
+                                    <a class="menu__list-item" href="#">festures</a>
+                                </li>
+                                <li class="menu__list-wrap-li">
+                                    <div class="wrapper__pages">
+                                        <a class="menu__list-item" href="#">Pages</a>
+                                        <!-- всплывающее меню у pages -->
+                                        <div class="wrapper__pages-box">
+                                            <div class="wrapper__pages-box-section">
+                                                <div class="wrapper__pages-box-section_title">MartPlace Pages</div>
+                                                <div class="wrapper__pages-box-section_wrap">
+                                                    <div class="wrapper__pages-box-section_wrap-categor">
+                                                        <ul class="listing">
+                                                            <li><a href="#">Home Page One</a></li>
+                                                            <li><a href="#">Home Page Two</a></li>
+                                                            <li><a href="#">Home Page Three</a></li>
+                                                            <li><a href="#">Products Grid</a></li>
+                                                            <li><a href="#">Products List</a></li>
+                                                            <li><a href="#">Category Grid Sidebar</a></li>
+                                                            <li><a href="#">Category List Sidebar</a></li>
+                                                            <li><a href="#">Search Product</a></li>
+                                                            <li><a href="#">Single Product V-1</a></li>
+                                                            <li><a href="#">Single Product V-2</a></li>
+                                                            <li><a href="#">Single Product V-3</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="wrapper__pages-box-section_wrap-categor">
+                                                        <ul class="listing">
+                                                            <li><a href="#">Single Items Comments</a></li>
+                                                            <li><a href="#">Single Items Reviews</a></li>
+                                                            <li><a href="#">Single Items Support</a></li>
+                                                            <li><a href="#">Single Items FAQs</a></li>
+                                                            <li><a href="#">Favorites Items</a></li>
+                                                            <li><a href="#">Author Profile</a></li>
+                                                            <li><a href="#">Author Items</a></li>
+                                                            <li><a href="#">Customer Reviews</a></li>
+                                                            <li><a href="#">Followers</a></li>
+                                                            <li><a href="#">Following</a></li>
+                                                            <li><a href="#">Product View Variations</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrapper__pages-box-section">
+                                                <div class="wrapper__pages-box-section_title">Dashboard</div>
+                                                <div class="wrapper__pages-box-section_wrap">
+                                                    <div class="wrapper__pages-box-section_wrap-categor">
+                                                        <ul class="listing">
+                                                            <li><a href="#">Dashboard</a></li>
+                                                            <li><a href="#">Account Settings</a></li>
+                                                            <li><a href="#">Author Purchases</a></li>
+                                                            <li><a href="#">Items Rating</a></li>
+                                                            <li><a href="#">Add Credits</a></li>
+                                                            <li><a href="#">Statements</a></li>
+                                                            <li><a href="#">Invoice</a></li>
+                                                            <li><a href="#">Upload Item</a></li>
+                                                            <li><a href="#">Edit Items</a></li>
+                                                            <li><a href="#">Withdrawals</a></li>
+                                                            <li><a href="#">Add Payment Method</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrapper__pages-box-section">
+                                                <div class="wrapper__pages-box-section_title">Others Pages</div>
+                                                <div class="wrapper__pages-box-section_wrap">
+                                                    <div class="wrapper__pages-box-section_wrap-categor">
+                                                        <ul class="listing">
+                                                            <li><a href="#">Notifications</a></li>
+                                                            <li><a href="#">Message Inbox</a></li>
+                                                            <li><a href="#">Message Compose</a></li>
+                                                            <li><a href="#">Shopping Cart</a></li>
+                                                            <li><a href="#">Checkout</a></li>
+                                                            <li><a href="#">Login</a></li>
+                                                            <li><a href="#">Register</a></li>
+                                                            <li><a href="#">Recovery Password</a></li>
+                                                            <li><a href="#">Support Forum</a></li>
+                                                            <li><a href="#">Forum Details</a></li>
+                                                            <li><a href="#">How It Works</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="wrapper__pages-box-section_wrap-categor">
+                                                        <ul class="listing">
+                                                            <li><a href="#">About Us</a></li>
+                                                            <li><a href="#">Pricing Plan</a></li>
+                                                            <li><a href="#">Testimonials</a></li>
+                                                            <li><a href="#">FAQs</a></li>
+                                                            <li><a href="#">FAQs Details</a></li>
+                                                            <li><a href="#">Affiliates</a></li>
+                                                            <li><a href="#">Terms & Conditions</a></li>
+                                                            <li><a href="#">Blog V-1</a></li>
+                                                            <li><a href="#">Blog V-2</a></li>
+                                                            <li><a href="#">Blog Details</a></li>
+                                                            <li><a href="#">Contact Us</a></li>
+                                                            <li><a href="#">Menu & Footer Variation</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- поиск -->
+                            <section class="search">
+                                <input autofocus type="text" placeholder="Search product here...">
+                                <button type="submit">
+                                    <img src="img/search.png" alt="">
+                                </button>
+                            </section>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- #1grn Блок с градиентом - начало -->
+            <section class="gradient__product">
+                <div class="container-bread">
+                    <div class="breadcrumbs-inner">
+                        <ul class="breadcrumbs-list gradient__product-bread">
+                            <li><a href="#">Home</a></li>
+                            <li>
+                                <a href="#">Blog Version 02</a>
+                            </li>
+                        </ul>
+                        <div class="gradient__product-title">Blog Version 02</div>
+                    </div>
+                </div>
+            </section>
+            <!-- #1grn Блок с градиентом - конец -->
+            <!-- #1grn page "blog" - start -->
+            <section class="blog">
+                <div class="container">
+                    <div class="blog__content">
+                        <!-- #2pur box 1 — start  -->
+                        <div class="blog__content_box01">
+                            <div class="blog__content_box01-img" style="background-image: url(img/BGcopy1.jpg)"></div>
+                            <div class="blog__content_box01-wrapper">
+                                <a href="#" class="blog__content_box01-title">Top Web Design Trends You Must Know in 2017</a>
+                                <div class="blog__content_box01-wrap">
+                                    <div class="blog__content_box01-wrap-user01">by</div>
+                                    <a href="#" class="blog__content_box01-wrap-user02">AazzTech</a>
+                                    <div class="blog__content_box01-wrap-data">24 Feb 2017</div>
+                                    <div class="blog__content_box01-wrap-comit">45</div>
+                                    <div class="blog__content_box01-wrap-view">345</div>
+                                </div>
+                                <div class="blog__content_box01-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat sunt in culpa qui officia sunt in culpa qui
+                                    officia.
+                                </div>
+                                <a href="#" class="blog__content_box01-btn">Read More...</a>
+                            </div>
+                        </div>
+                        <!-- #2pur box 2 — start  -->
+                        <div class="blog__content_box01">
+                            <div class="blog__content_box01-img" style="background-image: url(img/BGcopy2.jpg)"></div>
+                            <div class="blog__content_box01-wrapper">
+                                <a href="#" class="blog__content_box01-title">50+ Best Free Responsive WordPress Themes in 2017</a>
+                                <div class="blog__content_box01-wrap">
+                                    <div class="blog__content_box01-wrap-user01">by</div>
+                                    <a href="#" class="blog__content_box01-wrap-user02">AazzTech</a>
+                                    <div class="blog__content_box01-wrap-data">24 Feb 2017</div>
+                                    <div class="blog__content_box01-wrap-comit">45</div>
+                                    <div class="blog__content_box01-wrap-view">345</div>
+                                </div>
+                                <div class="blog__content_box01-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat sunt in culpa qui officia sunt in culpa qui
+                                    officia.
+                                </div>
+                                <a href="#" class="blog__content_box01-btn">Read More...</a>
+                            </div>
+                        </div>
+                        <!-- #2pur box 3 — start  -->
+                        <div class="blog__content_box01">
+                            <div class="blog__content_box01-img" style="background-image: url(img/BGcopy3.jpg)"></div>
+                            <div class="blog__content_box01-wrapper">
+                                <a href="#" class="blog__content_box01-title">20+ Best Free HTML Resume Templates</a>
+                                <div class="blog__content_box01-wrap">
+                                    <div class="blog__content_box01-wrap-user01">by</div>
+                                    <a href="#" class="blog__content_box01-wrap-user02">AazzTech</a>
+                                    <div class="blog__content_box01-wrap-data">24 Feb 2017</div>
+                                    <div class="blog__content_box01-wrap-comit">45</div>
+                                    <div class="blog__content_box01-wrap-view">345</div>
+                                </div>
+                                <div class="blog__content_box01-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat sunt in culpa qui officia sunt in culpa qui
+                                    officia.
+                                </div>
+                                <a href="#" class="blog__content_box01-btn">Read More...</a>
+                            </div>
+                        </div>
+                        <!-- #1grn кнопки страниц - начало -->
+                        <div class="page__pagination blog__content_buttons">
+                            <button class="icon-long-arrow-left btn blog__content_buttons-left"></button>
+                            <ul class="page__pagination-list">
+                                <li><a class="active" href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">8</a></li>
+                            </ul>
+                            <button class="icon-long-arrow-right btn blog__content_buttons-right"></button>
+                        </div>
+                        <!-- #1grn кнопки страниц - конец -->
+                    </div>
+                    <!-- #2grn правое блок сайта  -->
+                    <aside class="blog__aside">
+                        <!-- #2pur Блок 01  -->
+                        <div class="blog__aside_box01">
+                            <div class="blog__aside_box01-wrap">
+                                <div class="blog__aside_box01-title">Search Post</div>
+                            </div>
+                            <!-- #2pur поиск  -->
+                            <div class="blog__aside_box01-wrapper">
+                                <input class="blog__aside_box01-search" placeholder="Search post">
+                                <button class="blog__aside_box01-button">
+                                    <img src="img/search.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <!-- #2pur Блок 02  -->
+                        <div class="blog__aside_box02">
+                            <div class="blog__aside_box02-wrap">
+                                <button class="blog__aside_box02-btn">Popular Posts</button>
+                                <button class="blog__aside_box02-btn">Latest Posts</button>
+                            </div>
+                            <!-- #1pur container 01  -->
+                            <div class="blog__aside_box02-container">
+                                <div class="blog__aside_box02-container-line">
+                                    <a href="#" class="blog__aside_box02-container-img" style="background-image: url(img/slide2.jpg)"></a>
+                                    <div class="blog__aside_box02-container-wrap">
+                                        <div class="blog__aside_box02-container-wrap-title">5 best jQuery form validation plugins you must try</div>
+                                        <div class="blog__aside_box02-container-wrap-data">24 Feb 2017</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #1pur container 02  -->
+                            <div class="blog__aside_box02-container">
+                                <div class="blog__aside_box02-container-line">
+                                    <a href="#" class="blog__aside_box02-container-img" style="background-image: url(img/slide2.jpg)"></a>
+                                    <div class="blog__aside_box02-container-wrap">
+                                        <div class="blog__aside_box02-container-wrap-title">Best free jQuery image gallery plugins 2017</div>
+                                        <div class="blog__aside_box02-container-wrap-data">24 Feb 2017</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #1pur container 03  -->
+                            <div class="blog__aside_box02-container">
+                                <div class="blog__aside_box02-container-line">
+                                    <a href="#" class="blog__aside_box02-container-img" style="background-image: url(img/slide2.jpg)"></a>
+                                    <div class="blog__aside_box02-container-wrap">
+                                        <div class="blog__aside_box02-container-wrap-title">10 Free Joomla! Templates</div>
+                                        <div class="blog__aside_box02-container-wrap-data">24 Feb 2017</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #1pur container 04  -->
+                            <div class="blog__aside_box02-container">
+                                <div class="blog__aside_box02-container-line line-end">
+                                    <a href="#" class="blog__aside_box02-container-img" style="background-image: url(img/slide2.jpg)"></a>
+                                    <div class="blog__aside_box02-container-wrap">
+                                        <div class="blog__aside_box02-container-wrap-title">How to Create One Page Joomla Template</div>
+                                        <div class="blog__aside_box02-container-wrap-data">24 Feb 2017</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #2pur Блок 03  -->
+                        <div class="blog__aside_box03">
+                            <div class="blog__aside_box03-wrap">
+                                <div class="blog__aside_box03-title">Categories</div>
+                            </div>
+                            <ul class="blog__aside_box03-list">
+                                <li><a href="#">Wordpress</a><span>35</span></li>
+                                <li><a href="#">News & Updates</a><span>45</span></li>
+                                <li><a href="#">Tutorials</a><span>13</span></li>
+                                <li><a href="#">Joomla Tutorials</a><span>08</span></li>
+                                <li><a href="#">Quix Resources</a><span>34</span></li>
+                                <li><a href="#">Reviews</a><span>78</span></li>
+                                <li><a href="#">Resources</a><span>26</span></li>
+                            </ul>
+                        </div>
+                        <!-- #2pur Блок 04  -->
+                        <div class="blog__aside_box04">
+                            <div class="blog__aside_box04-wrap01">
+                                <div class="blog__aside_box04-title">Popular Tags</div>
+                            </div>
+                            <div class="blog__aside_box04-wrap02">
+                                <!-- #2pur ряд 01 -->
+                                <button class="blog__aside_box04-btn">Branding</button>
+                                <button class="blog__aside_box04-btn">Design</button>
+                                <button class="blog__aside_box04-btn">Marketing</button>
+                                <!-- #2pur ряд 02 -->
+                                <button class="blog__aside_box04-btn">Development</button>
+                                <button class="blog__aside_box04-btn">Design</button>
+                                <button class="blog__aside_box04-btn">Marketing</button>
+                                <!-- #2pur ряд 03 -->
+                                <button class="blog__aside_box04-btn">Branding</button>
+                                <button class="blog__aside_box04-btn">Design</button>
+                                <button class="blog__aside_box04-btn">Marketing</button>
+                                <!-- #2pur ряд 04 -->
+                                <button class="blog__aside_box04-btn">Development</button>
+                                <button class="blog__aside_box04-btn">Design</button>
+                                <button class="blog__aside_box04-btn">Marketing</button>
+                            </div>
+                        </div>
+                        <!-- #2pur Блок 05  -->
+                        <div class="blog__aside_box05">Banner<span>360x270</span>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+            <!-- #1grn page "blog" - end -->
+
+
+        </div>
+        <!-- ! Подвал  --------------------------------->
+        <footer class="footer">
+            <div class="container">
+                <!-- Блок # 1 -->
+                <div class="footer__wrappers">
+                    <div class="footer__box box-wrap1">
+                        <a href="#" class="footer__box_one-img"><img src="img/Logo-2.png"></a>
+                        <div class="footer__box_one-txt">
+                            Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
+                        </div>
+                        <a href="tel:67898752235" class="footer__box_one-phone">Phone: +6789-875-2235</a>
+                        <a href="mailto:support@aazztech.com" class="footer__box_one-email">support@aazztech.com</a>
+                        <a href="#" class="footer__box_one-map">202 New Hampshire Avenue
+                    Northwest #100, New York-2573</a>
+                    </div>
+                    <!-- Блок # 2 -->
+                    <div class="footer__box box-wrap2">
+                        <div class="footer__box_two-title">Our Company</div>
+                        <ul class="footer__box_two-text">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">How It Work</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Copyright Notice</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <!-- Блок # 3 -->
+                    <div class="footer__box box-wrap3">
+                        <div class="footer__box_three-title">Help Support</div>
+                        <ul class="footer__box_three-text">
+                            <li><a href="#">Support Forum</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Support Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Buyers Faq</a></li>
+                            <li><a href="#">Sellers Faq</a></li>
+                        </ul>
+                    </div>
+                    <!-- Блок # 4 -->
+                    <div class="footer__box box-wrap4">
+                        <div class="footer__box_four-title">Newsletter</div>
+                        <div class="footer__box_four-text">
+                            Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
+                        </div>
+                        <div class="footer__box_four-searh">
+                            <input type="text" placeholder="Enter email">
+                            <button type="submit">Submit</button>
+                        </div>
+                        <ul class="footer__box_four-social">
+                            <li>
+                                <a href="#" class="footer__box_four-link link_f"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__box_four-link link_t"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__box_four-link link_g"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__box_four-link link_p"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__box_four-link link_i"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__box_four-link link_d"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- последний блок -->
+        <section class="futer_bottom">
+            <div class="container">
+                ©2017
+                <a href="#" class="futer_bottom-link">
+                MartPlace. 
+            </a> All rights reserved. Created by
+                <a href="#" class="futer_bottom-link">
+                AazzTech
+            </a>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
