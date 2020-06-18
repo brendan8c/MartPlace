@@ -25,7 +25,6 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: $gray;
-    overflow-x: hidden;
 }
 
 .container {
@@ -44,6 +43,8 @@ body {
 html,
 body {
     height: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .wrapper {
