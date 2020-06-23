@@ -1,48 +1,68 @@
+// .products__title-box2 {
+//     position: relative;
+//     padding-right: 48px;
+//     cursor: pointer;
+// }
+// ===========================================
 .products__title-box2 {
-    position: relative;
-    padding-right: 48px;
-    cursor: pointer;
-}
-
-.submenu {
-    position: relative;
-    display: inline-block;
-    right: -350px;
-    &:hover .submenu-child {
-        display: block;
+    display: block;
+    &-wrap {
+        position: relative;
+        height: 81px;
+        width: 110px;
+        top: 0;
+        right: -15px;
+        align-items: center;
+        display: flex;
+        &:hover {
+            .products__title-submenu-child {
+                height: 180px;
+            }
+        }
     }
 }
 
-.submenu-child {
-    transform-origin: 0 0;
-    border-radius: 3px;
-    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
-    position: absolute;
-    display: none;
-    background-color: #fff;
-    min-width: 200px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    right: 0px;
-    top: 33px;
-    li {
-        a {
-            font-family: 'Quicksand-Regular', sans-serif;
-            color: #747b86;
-            padding: 3px 0 3px 30px;
-            text-decoration: none;
-            display: block;
-            font-size: 15px;
-            line-height: 28px;
-            font-weight: 400;
-            transition: .5s;
-        }
-        a:hover {
-            color: $blue;
-            text-shadow: 0 0 15px $pur;
-        }
-        a:hover .blink {
-            animation: none;
+.products__title-submenu {
+    position: relative;
+    font-size: 20px;
+    color: #7e8fa1;
+    top: 20px;
+    right: -26px;
+    display: contents;
+    &-child {
+        position: absolute;
+        box-shadow: 0px 5px 40px 0px #52555a33;
+        background-color: #ffffff;
+        height: 0;
+        min-width: 150px;
+        padding-left: 25px;
+        padding-right: 25px;
+        top: 95px;
+        left: -50px;
+        border-radius: 4px;
+        transition: .5s;
+        overflow: hidden;
+        white-space: nowrap;
+        li {
+            a {
+                font-family: 'Quicksand-Regular', sans-serif;
+                color: #747b86;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                text-decoration: none;
+                display: block;
+                font-size: 15px;
+                line-height: 28px;
+                font-weight: 400;
+                transition: .5s;
+            }
+            a:hover {
+                color: $blue;
+                text-shadow: 0 0 15px $pur;
+            }
+            // a:hover .blink {
+            //     animation: none;
+            // }
         }
     }
 }

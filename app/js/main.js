@@ -2,7 +2,7 @@
 
 $(function() {
     $('.body__slide-wrapper').slick({
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -16,13 +16,32 @@ $(function() {
     $('.products__items').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         fade: false,
         arrows: true,
         infinite: true,
         cssEase: "linear",
         speed: 500,
+        responsive: [{
+                breakpoint: 1170,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }
+        ]
     });
 });
 
