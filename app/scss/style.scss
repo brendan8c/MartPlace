@@ -24,8 +24,45 @@
     align-items: center;
 }
 
+.wrapper__home-box {
+    top: 38px;
+    left: 0px;
+    width: 100%;
+}
+
+.wrapper__products-box {
+    top: 38px;
+    left: 0px;
+    width: 100%;
+}
+
+.wrapper__wordpress-box {
+    top: 38px;
+    left: 0px;
+    width: 100%;
+}
+
+.wrapper__pages-box {
+    top: 33px;
+    left: 0px;
+    width: 100%;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
 .header__top {
     background-color: $ligr;
+}
+
+.header__logo-text,
+.header__logo {
+    transition: all .5s;
+    transform: translateX(150%);
+    display: contents;
+    transition: all .5s;
+    &.activ {
+        display: none;
+    }
 }
 
 .header__top-inner {
@@ -1249,7 +1286,8 @@
 // блок с достоинствами маркетплейса - начало
 // todo: шапка 
 .worth {
-    height: 1185px;
+    height: 100%;
+    padding-bottom: 30px;
     background-color: #ffffff;
     padding-top: 120px;
     &__title {
@@ -1277,6 +1315,7 @@
 .worth__boxes {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     &_blok {
         height: 373px;
         width: 361px;
@@ -1355,13 +1394,12 @@
 // todo: Два блока - начало 
 .twoblok {
     display: flex;
-    // max-width: 1170px;
-    width: max-content;
     margin: 0 auto;
     &__common {
         position: relative;
         width: 961px;
-        height: 560px;
+        height: 100%;
+        padding-bottom: 50px;
         padding-top: 100px;
         &-pic {
             background-repeat: no-repeat;
@@ -1376,6 +1414,7 @@
             color: #ffffff;
             text-align: center;
             margin-bottom: 35px;
+            line-height: 40px;
         }
         &-text {
             @include f400;
@@ -1429,6 +1468,7 @@
 // Прозрачные слои подрубаю ниже
 .twoblok__common {
     z-index: 0;
+    width: 100vw;
     &-slo {
         position: absolute;
         bottom: 0px;
@@ -1560,7 +1600,8 @@
 // todo: Блок с отзывами из фэйсбук - начало
 // шапка
 .reviews {
-    height: 840px;
+    height: 100%;
+    padding-bottom: 30px;
     &__title {
         text-align: center;
         padding: 120px 230px 60px;
@@ -1568,6 +1609,7 @@
             @include f400;
             font-size: 36px;
             padding-bottom: 36px;
+            line-height: 40px;
             span {
                 color: $blue;
             }
@@ -1590,7 +1632,7 @@
         border-left: 2px solid $blue;
         max-width: 555px;
         width: 100%;
-        height: 315px;
+        height: 100%;
         padding: 50px 40px;
     }
     &-wraps {
@@ -1663,7 +1705,8 @@
 // todo: Блок с отзывами из фэйсбук - конец
 // todo: Блок последних новостей - начало
 .latest {
-    height: 885px;
+    height: 100%;
+    padding-bottom: 100px;
     padding-top: 122px;
     background-color: #eff1f5;
     &__header {
@@ -1675,6 +1718,7 @@
             @include f400;
             font-size: 36px;
             margin-bottom: 37px;
+            line-height: 40px;
             span {
                 color: $blue;
             }
@@ -1806,6 +1850,8 @@
     &__box {
         width: 555px;
         text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     &__linner {
         width: 2px;
@@ -1836,11 +1882,13 @@
     &__txt1 {
         span {
             color: $blue;
+            line-height: 40px;
         }
     }
     &__txt2 {
         span {
             color: $pur;
+            line-height: 40px;
         }
     }
 }
@@ -1852,18 +1900,23 @@
     background: linear-gradient(90deg, rgba(98, 32, 148, 1) 0%, rgba(18, 54, 213, 1) 100%);
     text-align: center;
     padding-top: 110px;
-    height: 400px;
+    height: 100%;
+    padding-bottom: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
     &__title {
         @include f400;
         font-size: 36px;
         margin-bottom: 30px;
         color: #ffffff;
+        line-height: 40px;
     }
     &__txt {
         @include f400;
         font-size: 18px;
         margin-bottom: 50px;
         color: #ffffff;
+        line-height: 30px;
     }
     &__link {
         @include f400;
